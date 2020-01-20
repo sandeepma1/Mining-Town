@@ -1,0 +1,1483 @@
+fileFormatVersion: 2
+guid: 2774e0d564e75f14bac76d39a86b38c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4821746619721399096
+    second: BuildingsTexture2_0
+  - first:
+      213: -2732670918171908569
+    second: BuildingsTexture2_1
+  - first:
+      213: -4232532967780258580
+    second: BuildingsTexture2_2
+  - first:
+      213: 1615189148618547763
+    second: BuildingsTexture2_3
+  - first:
+      213: -858848896957041346
+    second: BuildingsTexture2_4
+  - first:
+      213: 4524195176454888677
+    second: BuildingsTexture2_5
+  - first:
+      213: 628438303139848948
+    second: BuildingsTexture2_6
+  - first:
+      213: 3004815148879779348
+    second: BuildingsTexture2_7
+  - first:
+      213: 6760146558747966575
+    second: BuildingsTexture2_8
+  - first:
+      213: 7982941190153241022
+    second: BuildingsTexture2_9
+  - first:
+      213: -5862708352542034868
+    second: BuildingsTexture2_10
+  - first:
+      213: 716115929734602762
+    second: BuildingsTexture2_11
+  - first:
+      213: 526290074749158338
+    second: BuildingsTexture2_12
+  - first:
+      213: -6474528872829714518
+    second: BuildingsTexture2_13
+  - first:
+      213: -2997587921520765053
+    second: BuildingsTexture2_14
+  - first:
+      213: 6593614510163783101
+    second: BuildingsTexture2_15
+  - first:
+      213: 8479725294619876351
+    second: BuildingsTexture2_16
+  - first:
+      213: 2164313955637333538
+    second: BuildingsTexture2_17
+  - first:
+      213: 8844653755912186706
+    second: BuildingsTexture2_18
+  - first:
+      213: 3011224617770348581
+    second: BuildingsTexture2_19
+  - first:
+      213: -6587635753272019352
+    second: BuildingsTexture2_20
+  - first:
+      213: 2496654270707638377
+    second: BuildingsTexture2_21
+  - first:
+      213: -1780774870152906702
+    second: BuildingsTexture2_22
+  - first:
+      213: 3758429226325657145
+    second: BuildingsTexture2_23
+  - first:
+      213: 8593810841076815004
+    second: BuildingsTexture2_24
+  - first:
+      213: -1388389050710323609
+    second: BuildingsTexture2_25
+  - first:
+      213: 2093457028619162089
+    second: BuildingsTexture2_26
+  - first:
+      213: 4768580919595997390
+    second: BuildingsTexture2_27
+  - first:
+      213: 6853708840471200202
+    second: BuildingsTexture2_28
+  - first:
+      213: 8563145046884827446
+    second: BuildingsTexture2_29
+  - first:
+      213: 7373179589225984592
+    second: BuildingsTexture2_30
+  - first:
+      213: -8781996307260667372
+    second: BuildingsTexture2_31
+  - first:
+      213: 5535348507589450772
+    second: BuildingsTexture2_32
+  - first:
+      213: 2275067933109025075
+    second: BuildingsTexture2_33
+  - first:
+      213: -176335925432827052
+    second: BuildingsTexture2_34
+  - first:
+      213: -5879686215847855569
+    second: BuildingsTexture2_35
+  - first:
+      213: -6076203290137722898
+    second: BuildingsTexture2_36
+  - first:
+      213: -9091650786595002787
+    second: BuildingsTexture2_37
+  - first:
+      213: 6711290476366547379
+    second: BuildingsTexture2_38
+  - first:
+      213: -2555462035336707158
+    second: BuildingsTexture2_39
+  - first:
+      213: -8354419093550187997
+    second: BuildingsTexture2_40
+  - first:
+      213: -8002054923077472989
+    second: BuildingsTexture2_41
+  - first:
+      213: -2563838068054098685
+    second: BuildingsTexture2_42
+  - first:
+      213: 7947842587150299107
+    second: BuildingsTexture2_43
+  - first:
+      213: -5546814040471071191
+    second: BuildingsTexture2_44
+  - first:
+      213: 1169937974417886361
+    second: BuildingsTexture2_45
+  - first:
+      213: -6760918324794068278
+    second: BuildingsTexture2_46
+  - first:
+      213: 496901941987760113
+    second: BuildingsTexture2_47
+  - first:
+      213: 4428965803661302986
+    second: BuildingsTexture2_48
+  - first:
+      213: 990950886856551457
+    second: BuildingsTexture2_49
+  - first:
+      213: 1485045079106339067
+    second: BuildingsTexture2_50
+  - first:
+      213: -6601072274867428035
+    second: BuildingsTexture2_51
+  - first:
+      213: 8286015104455521777
+    second: BuildingsTexture2_52
+  - first:
+      213: -1862804376209737080
+    second: BuildingsTexture2_53
+  - first:
+      213: -2245052938418161934
+    second: BuildingsTexture2_54
+  - first:
+      213: -4671423475116870059
+    second: BuildingsTexture2_55
+  - first:
+      213: 7571023109573143376
+    second: BuildingsTexture2_56
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BuildingsTexture2_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1728
+        width: 362
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60934e5bd182e1d45b3ec4827e1c063b
+      internalID: 4821746619721399096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1728
+        width: 312
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915709080e5c5094f9866c3749dfe789
+      internalID: -2732670918171908569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1664
+        width: 345
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bc730883b18b74a9040395f5ea5eb4
+      internalID: -4232532967780258580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_3
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1664
+        width: 284
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cd375277af03d49a6da4dd8f8172fb
+      internalID: 1615189148618547763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_4
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1600
+        width: 395
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeeb74e952a054144bc09e0645b4f269
+      internalID: -858848896957041346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1254
+        width: 473
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd65b1dcc9ea43b429adb350d4dc1fed
+      internalID: 4524195176454888677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_6
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1216
+        width: 277
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd92d975488bc974aad371aab73155ef
+      internalID: 628438303139848948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_7
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1434
+        width: 283
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9adc6b04aaa484b9b03e00877b46b7
+      internalID: 3004815148879779348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_8
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1344
+        width: 310
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cfdbd86cec1974ea0393e64fa55c83
+      internalID: 6760146558747966575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_9
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1216
+        width: 279
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd637778fec12ce42a5f2c25f5af4b7b
+      internalID: 7982941190153241022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_10
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1216
+        width: 160
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffa03308a8173a499d223d10f4fc1f1
+      internalID: -5862708352542034868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_11
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 963
+        width: 277
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da868dbf09100774c9cbe4f14c05d784
+      internalID: 716115929734602762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1023
+        width: 144
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea192d34255761e4b80059c5353fba8f
+      internalID: 526290074749158338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1156
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4b31511efc56e4ea8d7ab5a35b27e7
+      internalID: -6474528872829714518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc67160aec54073458e98c4f8db147b2
+      internalID: -2997587921520765053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1156
+        width: 118
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f156f73981a8194193374f9902f8219
+      internalID: 6593614510163783101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_16
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1155
+        width: 61
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f206a7f38b9974aa39f5beb547b660
+      internalID: 8479725294619876351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_17
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1189
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3be853c06a32743970f4191301036a
+      internalID: 2164313955637333538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1164
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada57f89acf1c864981800df6d1eec01
+      internalID: 8844653755912186706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_19
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 960
+        width: 192
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621b2351a2bd8fe41a0d496b1a284a21
+      internalID: 3011224617770348581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_20
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1192
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f131015ab4c8e764abcd7c9c9f821af5
+      internalID: -6587635753272019352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_21
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1092
+        width: 62
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b8bb6737f657f468e8a353b88381fb
+      internalID: 2496654270707638377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1108
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfaef462ffbb17844a743ce60ae03a93
+      internalID: -1780774870152906702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1088
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055600533e1871848873bb6af3471723
+      internalID: 3758429226325657145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1024
+        width: 44
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf68ec42b44564848b583eafe073724d
+      internalID: 8593810841076815004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1096
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6110a5453c1d7540a3a23dc704834a4
+      internalID: -1388389050710323609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_26
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1112
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7bceed3d1f0fb4a975e64bd0ff404e
+      internalID: 2093457028619162089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_27
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1088
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65473f2e2503e54ba1d603b2a15d700
+      internalID: 4768580919595997390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_28
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1024
+        width: 123
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df435bdbcc6b589419ea09f5b28a0955
+      internalID: 6853708840471200202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_29
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 876
+        width: 164
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f363d637156bf438759d469daae012
+      internalID: 8563145046884827446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_30
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 740
+        width: 463
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc495b169bfa554fa8d38d71ca54333
+      internalID: 7373179589225984592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_31
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1088
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a804c51d4979b5b458fa65d571e58d33
+      internalID: -8781996307260667372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_32
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1031
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced07a04daab6d749a6745dd28c00c7d
+      internalID: 5535348507589450772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_33
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1058
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfac18d93469d604da81858457f356df
+      internalID: 2275067933109025075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1024
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539ff4f88b2cc694b8573b7b73daa13b
+      internalID: -176335925432827052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_35
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1024
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3576dd30e41123743870f1364c3144b5
+      internalID: -5879686215847855569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_36
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1026
+        width: 59
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6446374a0c7650442a501259a13464e9
+      internalID: -6076203290137722898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_37
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 832
+        width: 159
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f83e59bd954c574283c19c56ea13697
+      internalID: -9091650786595002787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 126
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9897ef7aab3262d47b445f8234872a25
+      internalID: 6711290476366547379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_39
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 961
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963b4871299bd254fb864ef5ebc91835
+      internalID: -2555462035336707158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_40
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 960
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec68d95549144164b9c0e59371b1e6d6
+      internalID: -8354419093550187997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_41
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 640
+        width: 220
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863133d69be7e2e41984c363a698f2f7
+      internalID: -8002054923077472989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_42
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 953
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500cb2acbf904b743a678d8e1e104a0c
+      internalID: -2563838068054098685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_43
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 835
+        width: 124
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d291f1b01f56fa4ab754de36c40dccf
+      internalID: 7947842587150299107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_44
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 704
+        width: 64
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e97643f981ff740b90621dd9470073
+      internalID: -5546814040471071191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_45
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 492
+        width: 298
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70fed4c4dfc33e4f916a651e3128bb4
+      internalID: 1169937974417886361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_46
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 760
+        width: 121
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f8db3fc871ea944a4d5d6e434b335c
+      internalID: -6760918324794068278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_47
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 640
+        width: 160
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811781d1ef337da4c80f1d632fae6e04
+      internalID: 496901941987760113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_48
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 660
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18576e8e7b4a5e94aaffae16eb1a43af
+      internalID: 4428965803661302986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_49
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 396
+        width: 329
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb546fd256fbc44293366d5e0e2f721
+      internalID: 990950886856551457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_50
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 320
+        width: 297
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374a6512397053a45aeffa01e17e6e11
+      internalID: 1485045079106339067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_51
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 512
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70199d155974dc64a8cc26a3caf71ef4
+      internalID: -6601072274867428035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_52
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 512
+        width: 41
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796fa312a48b9264fa3247936dae3006
+      internalID: 8286015104455521777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_53
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 448
+        width: 169
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d502f41e2486e4385e2b2368831c72
+      internalID: -1862804376209737080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_54
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 376
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e663bd977f7c314aaac40214bda5bad
+      internalID: -2245052938418161934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_55
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 320
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8348075b91be1dd45b5d9133751771c3
+      internalID: -4671423475116870059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingsTexture2_56
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 320
+        width: 105
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f452f22e99b9594685e901adb5e82c5
+      internalID: 7571023109573143376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

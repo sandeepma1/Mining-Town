@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class SimpleCharacterControl : MonoBehaviour
 {
-
-    [SerializeField] private bl_Joystick Joystick;
     [SerializeField] private float m_moveSpeed = 1;
     [SerializeField] private float m_interpolation = 10;
     private bool m_wasGrounded;
@@ -88,8 +86,8 @@ public class SimpleCharacterControl : MonoBehaviour
 
     private void DirectUpdate()
     {
-        m_currentV = Mathf.Lerp(m_currentV, Joystick.Vertical, Time.deltaTime * m_interpolation);
-        m_currentH = Mathf.Lerp(m_currentH, Joystick.Horizontal, Time.deltaTime * m_interpolation);
+        // m_currentV = Mathf.Lerp(m_currentV, Joystick.Vertical, Time.deltaTime * m_interpolation);
+        //m_currentH = Mathf.Lerp(m_currentH, Joystick.Horizontal, Time.deltaTime * m_interpolation);
         Vector3 direction = mainCamera.forward * m_currentV + mainCamera.right * m_currentH;
         direction.y = 0;
         direction = direction.normalized * direction.magnitude;
