@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float m_moveSpeed = 1;
-    [SerializeField] private float m_interpolation = 10;
+    [SerializeField] private Transform playerMeshRotation;
+    [SerializeField] private Transform playerCrosshairDot;
+    [SerializeField] private float crosshairDistance = 0.25f;
+    [SerializeField] private float m_moveSpeed = 5;
+    [SerializeField] private float m_interpolation = 50;
+    [SerializeField] private Animator m_animator;
     private Transform mainCamera;
-    private Animator m_animator;
     private Vector3 m_currentDirection = Vector3.zero;
     private float currentV = 0;
     private float currentH = 0;
@@ -17,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     {
         mainCamera = Camera.main.transform;
         Joystick.OnJoystickMove += OnJoystickMove;
-        m_animator = GetComponent<Animator>();
     }
 
     private void OnDestroy()
@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnJoystickMove(Vector2 position)
     {
+        // Move player's crosshair dot
+        playerCrosshairDot.transform.localPosition = position * crosshairDistance;
         inputAxis = position;
         m_animator.SetBool("Grounded", inputAxis != Vector2.zero);
     }
@@ -41,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (direction != Vector3.zero)
         {
             m_currentDirection = Vector3.Slerp(m_currentDirection, direction, Time.deltaTime * m_interpolation);
-            transform.rotation = Quaternion.LookRotation(m_currentDirection);
+            playerMeshRotation.rotation = Quaternion.LookRotation(m_currentDirection);
             transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
