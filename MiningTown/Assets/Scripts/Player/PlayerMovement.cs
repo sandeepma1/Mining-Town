@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static Action<Vector3> OnPlayerMoved;
     [SerializeField] private Transform playerMeshRotation;
     [SerializeField] private Transform playerCrosshairDot;
     [SerializeField] private float crosshairDistance = 0.25f;
@@ -18,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         mainCamera = Camera.main.transform;
         Joystick.OnJoystickMove += OnJoystickMove;
+        OnPlayerMoved?.Invoke(transform.position);
     }
 
     private void OnDestroy()
@@ -45,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
             m_currentDirection = Vector3.Slerp(m_currentDirection, direction, Time.deltaTime * m_interpolation);
             playerMeshRotation.rotation = Quaternion.LookRotation(m_currentDirection);
             transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
+            OnPlayerMoved?.Invoke(transform.position);
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
     }
