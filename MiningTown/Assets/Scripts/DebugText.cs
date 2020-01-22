@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DebugText : MonoBehaviour
@@ -14,5 +15,13 @@ public class DebugText : MonoBehaviour
     public static void PrintDebugText(string text)
     {
         debugText.text = text;
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonUp(1))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

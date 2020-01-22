@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -15,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     private float currentV = 0;
     private float currentH = 0;
     private Vector2 inputAxis = Vector2.zero;
+    private bool isPlayerMoving = false;
+    private const float rotationSpeed = 10;
+    private Transform closestEnemy = null;
 
     private void Start()
     {
@@ -50,6 +54,44 @@ public class PlayerMovement : MonoBehaviour
             transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
             OnPlayerMoved?.Invoke(transform.position);
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
+            isPlayerMoving = true;
+            DebugText.PrintDebugText("Moving");
         }
+        else
+        {
+            DebugText.PrintDebugText("Stopped");
+            isPlayerMoving = false;
+            closestEnemy = GetClosestEnemy();
+            if (closestEnemy != null)
+            {
+                RotateTowardsClosestEnemy(closestEnemy.position);
+            }
+        }
+    }
+
+    private void RotateTowardsClosestEnemy(Vector3 positionToLook)
+    {
+        DebugText.PrintDebugText("RotateTowardsClosestEnemy " + positionToLook);
+        playerMeshRotation.rotation = Quaternion.Slerp(playerMeshRotation.rotation,
+            Quaternion.LookRotation((positionToLook - transform.position).normalized),
+            Time.deltaTime * rotationSpeed);
+    }
+
+    private Transform GetClosestEnemy()
+    {
+        Transform tMin = null;
+        float minDist = Mathf.Infinity;
+        Vector3 currentPos = transform.position;
+        List<MonsterBase> smallMonsters = MonsterManager.Instance.GetAllMonstersList();
+        for (int i = 0; i < smallMonsters.Count; i++)
+        {
+            float dist = Vector3.Distance(smallMonsters[i].transform.position, currentPos);
+            if (dist < minDist)
+            {
+                tMin = smallMonsters[i].transform;
+                minDist = dist;
+            }
+        }
+        return tMin;
     }
 }
