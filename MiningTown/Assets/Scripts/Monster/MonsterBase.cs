@@ -3,13 +3,14 @@ using UnityEngine.AI;
 
 public class MonsterBase : MonoBehaviour
 {
+    [SerializeField] private Transform uiHealthBarPosition;
+    [SerializeField] private float maxHealth = 5;
+    private float health;
+    private UiHealthBar uiHealthBar;
     private NavMeshAgent navMeshAgent;
     private Camera mainCamera;
     private const float rotationSpeed = 10;
-    [SerializeField] private Transform uiHealthBarPosition;
-    private float health;
-    [SerializeField] private float maxHealth = 5;
-    private UiHealthBar uiHealthBar;
+    private bool followPlayerTrigger = false;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class MonsterBase : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         uiHealthBar = Instantiate(UiHealthBarCanvas.Instance.GetUiHealthBarPrefab());
         uiHealthBar.Init(uiHealthBarPosition);
+        FollowPlayer();
     }
 
     private void OnDestroy()
@@ -26,6 +28,46 @@ public class MonsterBase : MonoBehaviour
         PlayerMovement.OnPlayerMoved -= OnPlayerMoved;
     }
 
+    private void OnPlayerMoved(Vector3 playerPosition, bool isPlayerMoving)
+    {
+        if (isPlayerMoving)
+        {
+            navMeshAgent.SetDestination(playerPosition);
+            RotateTowards(playerPosition);
+            followPlayerTrigger = true;
+        }
+        else
+        {
+            if (followPlayerTrigger)
+            {
+                followPlayerTrigger = false;
+                FollowPlayer();
+            }
+        }
+    }
+
+    private void RotateTowards(Vector3 targetPosition)
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation,
+            Quaternion.LookRotation((targetPosition - transform.position).normalized),
+            Time.deltaTime * rotationSpeed);
+    }
+
+    private void FollowPlayer()
+    {
+        if (!navMeshAgent.pathPending)
+        {
+            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+            {
+                if (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f)
+                {
+                    // monster stopped
+                }
+            }//else monster running
+        }
+    }
+
+    #region GetComponent Collision in other scripts TakeHit()
     public void TakeHit()
     {
         health--;
@@ -40,31 +82,5 @@ public class MonsterBase : MonoBehaviour
             uiHealthBar.OnHealthChanged(health / maxHealth);
         }
     }
-
-    private void LateUpdate()
-    {
-        if (!navMeshAgent.pathPending)
-        {
-            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-            {
-                if (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f)
-                {
-
-                }
-            }//else running
-        }
-    }
-
-    private void OnPlayerMoved(Vector3 playerPosition)
-    {
-        navMeshAgent.SetDestination(playerPosition);
-        RotateTowards(playerPosition);
-    }
-
-    private void RotateTowards(Vector3 targetPosition)
-    {
-        transform.rotation = Quaternion.Slerp(transform.rotation,
-            Quaternion.LookRotation((targetPosition - transform.position).normalized),
-            Time.deltaTime * rotationSpeed);
-    }
+    #endregion
 }

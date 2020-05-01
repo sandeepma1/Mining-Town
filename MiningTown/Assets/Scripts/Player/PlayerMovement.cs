@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static Action<Vector3> OnPlayerMoved;
+    public static Action<Vector3, bool> OnPlayerMoved;
+    [SerializeField] private Transform weaponHolder;
+    [SerializeField] private BasicSword basicSwordPrefab;
     [SerializeField] private Transform playerMeshRotation;
     [SerializeField] private Transform playerCrosshairDot;
-    [SerializeField] private float crosshairDistance = 0.25f;
+    [SerializeField] private Transform playerRangeCircle;
     [SerializeField] private float m_moveSpeed = 5;
     [SerializeField] private float m_interpolation = 50;
     [SerializeField] private Animator m_animator;
@@ -18,13 +20,16 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 inputAxis = Vector2.zero;
     private bool isPlayerMoving = false;
     private const float rotationSpeed = 10;
-    private Transform closestEnemy = null;
+    private MonsterBase closestMonster = null;
+    private const float playerAttackRange = 2f;
+    private const float maxDotDistance = 2f;
+    private BasicSword basicSword; //Change to weapon base later
 
     private void Start()
     {
+        InitPlayer();
         mainCamera = Camera.main.transform;
         Joystick.OnJoystickMove += OnJoystickMove;
-        OnPlayerMoved?.Invoke(transform.position);
     }
 
     private void OnDestroy()
@@ -32,10 +37,17 @@ public class PlayerMovement : MonoBehaviour
         Joystick.OnJoystickMove -= OnJoystickMove;
     }
 
-    private void OnJoystickMove(Vector2 position)
+    private void InitPlayer()
     {
-        // Move player's crosshair dot
-        playerCrosshairDot.transform.localPosition = position * crosshairDistance;
+        basicSword = Instantiate(basicSwordPrefab, weaponHolder);
+        playerRangeCircle.localScale = new Vector3(playerAttackRange, playerAttackRange, 0);
+        OnPlayerMoved?.Invoke(transform.position, false);
+    }
+
+    private void OnJoystickMove(Vector2 position, bool isMoving)
+    {
+        playerCrosshairDot.gameObject.SetActive(isMoving);
+        playerCrosshairDot.transform.localPosition = position * maxDotDistance;
         inputAxis = position;
         m_animator.SetBool("Grounded", inputAxis != Vector2.zero);
     }
@@ -47,51 +59,50 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction = mainCamera.forward * currentV + mainCamera.right * currentH;
         direction.y = 0;
         direction = direction.normalized;
-        if (direction != Vector3.zero)
+        if (direction != Vector3.zero) //Player Moving
         {
             m_currentDirection = Vector3.Slerp(m_currentDirection, direction, Time.deltaTime * m_interpolation);
             playerMeshRotation.rotation = Quaternion.LookRotation(m_currentDirection);
             transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
-            OnPlayerMoved?.Invoke(transform.position);
+            OnPlayerMoved?.Invoke(transform.position, true);
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
             isPlayerMoving = true;
-            DebugText.PrintDebugText("Moving");
         }
-        else
+        else //Stopped
         {
-            DebugText.PrintDebugText("Stopped");
+            //Note: Make changes here if the last selected monster should be selected or always 
+            //attack nearest monster
+            OnPlayerMoved?.Invoke(transform.position, false);
             isPlayerMoving = false;
-            closestEnemy = GetClosestEnemy();
-            if (closestEnemy != null)
+            closestMonster = MonsterManager.Instance.GetNearestMonsterFromPosition(transform.position);
+            if (closestMonster != null)
             {
-                RotateTowardsClosestEnemy(closestEnemy.position);
+                RotateTowardsClosestEnemy(closestMonster.transform.position);
             }
         }
     }
 
     private void RotateTowardsClosestEnemy(Vector3 positionToLook)
     {
-        DebugText.PrintDebugText("RotateTowardsClosestEnemy " + positionToLook);
+        Hud.SetHudText?.Invoke("RotateTowardsClosestEnemy " + positionToLook);
         playerMeshRotation.rotation = Quaternion.Slerp(playerMeshRotation.rotation,
             Quaternion.LookRotation((positionToLook - transform.position).normalized),
             Time.deltaTime * rotationSpeed);
+        AttackClosestMonster();
     }
 
-    private Transform GetClosestEnemy()
+    private void AttackClosestMonster()
     {
-        Transform tMin = null;
-        float minDist = Mathf.Infinity;
-        Vector3 currentPos = transform.position;
-        List<MonsterBase> smallMonsters = MonsterManager.Instance.GetAllMonstersList();
-        for (int i = 0; i < smallMonsters.Count; i++)
+        if (closestMonster == null)
         {
-            float dist = Vector3.Distance(smallMonsters[i].transform.position, currentPos);
-            if (dist < minDist)
-            {
-                tMin = smallMonsters[i].transform;
-                minDist = dist;
-            }
+            return;
         }
-        return tMin;
+        float closestEnemyDistance = Vector3.Distance(transform.position, closestMonster.transform.position);
+        Hud.SetHudText?.Invoke(closestEnemyDistance.ToString());
+        if (closestEnemyDistance <= playerAttackRange)
+        {
+            basicSword.Attack();
+            Hud.SetHudText?.Invoke("Attacking");
+        }
     }
 }
