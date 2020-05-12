@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3797878777212149370}
   - component: {fileID: 3797878777212149371}
   - component: {fileID: 3797878777212149368}
+  - component: {fileID: 3476247970607104869}
   m_Layer: 5
   m_Name: UiHealthBar
   m_TagString: Untagged
@@ -90,6 +91,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarFillImage: {fileID: 3797878778331948400}
+--- !u!225 &3476247970607104869
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3797878777212149374}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3797878778331948406
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34229445, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.9056604, g: 0.23845479, b: 0, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:

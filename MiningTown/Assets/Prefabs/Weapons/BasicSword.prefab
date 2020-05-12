@@ -45,8 +45,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.118564606, y: 0.04202336, z: 0.62460965}
-  m_Center: {x: 0.0013815165, y: -0.0012188852, z: 0.3095751}
+  m_Size: {x: 0.118564606, y: 0.04202336, z: 0.77975625}
+  m_Center: {x: 0.0013815165, y: -0.0012188852, z: 0.3871484}
 --- !u!54 &2626533804955677733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67882a84a15613e498f7e5be41358319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swordMeshCollider: {fileID: 7595777920273853839}
+  weaponMesh: {fileID: 7595777920273853839}
   attackInterval: 0.25
 --- !u!1 &530265393902550720
 GameObject:

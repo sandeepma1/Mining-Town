@@ -1,71 +1,94 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using DG.Tweening;
+using System;
+using UnityEditor;
 
-public class MonsterBase : MonoBehaviour
+public class MonsterBase : MonoBehaviour, IInteractable
 {
+    public Action<MonsterBase> OnMonsterDied;
+    [SerializeField] protected MonsterType monsterType;
+    [SerializeField] private bool doWander;
+    [SerializeField] private float wanderRepeatRate = 3;
+    [SerializeField] private float wanderRadius = 2;
     [SerializeField] private Transform uiHealthBarPosition;
     [SerializeField] private float maxHealth = 5;
+    [SerializeField] protected float damage = 5;
+    [SerializeField] protected float knockBackDistance = 1;
+    [SerializeField] private float viewZone = 5;
+    [Space(30)] [SerializeField] private float attackZone = 5;
+
     private float health;
     private UiHealthBar uiHealthBar;
-    private NavMeshAgent navMeshAgent;
-    private Camera mainCamera;
-    private const float rotationSpeed = 10;
-    private bool followPlayerTrigger = false;
+    protected NavMeshAgent navMeshAgent;
+    protected const float knockBackDuration = 0.1f;
+    protected bool isPlayerDetected;
+    protected bool isPreparingToAttack;
+    protected Transform playerTransform;
 
-    private void Start()
+    protected virtual void Start()
     {
-        health = maxHealth;
-        PlayerMovement.OnPlayerMoved += OnPlayerMoved;
-        mainCamera = Camera.main;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        uiHealthBar = Instantiate(UiHealthBarCanvas.Instance.GetUiHealthBarPrefab());
-        uiHealthBar.Init(uiHealthBarPosition);
-        FollowPlayer();
-    }
-
-    private void OnDestroy()
-    {
-        PlayerMovement.OnPlayerMoved -= OnPlayerMoved;
-    }
-
-    private void OnPlayerMoved(Vector3 playerPosition, bool isPlayerMoving)
-    {
-        if (isPlayerMoving)
+        uiHealthBar = UiHealthBarCanvas.Instance.CreateHealthBar(uiHealthBarPosition);
+        health = maxHealth;
+        playerTransform = PlayerMovement.Instance.GetPlayerTransform();
+        if (doWander)
         {
-            navMeshAgent.SetDestination(playerPosition);
-            RotateTowards(playerPosition);
-            followPlayerTrigger = true;
+            InvokeRepeating("Wander", 1, wanderRepeatRate);
         }
-        else
+    }
+
+    protected virtual void Update()
+    {
+        if (monsterType == MonsterType.FollowOnDetect)
         {
-            if (followPlayerTrigger)
+            if (IsInViewZone())
             {
-                followPlayerTrigger = false;
-                FollowPlayer();
+                isPlayerDetected = true;
+            }
+            else
+            {
+                isPlayerDetected = false;
             }
         }
     }
 
-    private void RotateTowards(Vector3 targetPosition)
+
+    #region Wander stuff
+    private void Wander()
+    {
+        if (isPlayerDetected)
+        {
+            return;
+        }
+        Vector3 randDirection = UnityEngine.Random.insideUnitSphere * wanderRadius;
+        randDirection += transform.position;
+        NavMeshHit navHit;
+        NavMesh.SamplePosition(randDirection, out navHit, wanderRadius, -1);
+        navMeshAgent.SetDestination(new Vector3(navHit.position.x, 0, navHit.position.z));
+    }
+    #endregion
+
+
+    #region Helper functions
+    protected void LookAtPlayer()
     {
         transform.rotation = Quaternion.Slerp(transform.rotation,
-            Quaternion.LookRotation((targetPosition - transform.position).normalized),
-            Time.deltaTime * rotationSpeed);
+      Quaternion.LookRotation((playerTransform.position - transform.position).normalized),
+      Time.deltaTime * 10);
     }
 
-    private void FollowPlayer()
+    protected bool IsInAttackZone()
     {
-        if (!navMeshAgent.pathPending)
-        {
-            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-            {
-                if (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f)
-                {
-                    // monster stopped
-                }
-            }//else monster running
-        }
+        return Vector3.Distance(playerTransform.position, transform.position) <= attackZone;
     }
+
+    protected bool IsInViewZone()
+    {
+        return Vector3.Distance(playerTransform.position, transform.position) <= viewZone;
+    }
+    #endregion
+
 
     #region GetComponent Collision in other scripts TakeHit()
     public void TakeHit()
@@ -73,14 +96,37 @@ public class MonsterBase : MonoBehaviour
         health--;
         if (health <= 0)
         {
-            MonsterManager.Instance.MonsterDied(this);
+            OnMonsterDied?.Invoke(this);
             Destroy(uiHealthBar.gameObject);
             Destroy(this.gameObject);
         }
         else
         {
             uiHealthBar.OnHealthChanged(health / maxHealth);
+            Knockback();
         }
+    }
+
+    protected void Knockback()
+    {
+        Vector3 direction = (transform.position - playerTransform.position).normalized;
+        transform.DOMove(transform.position + direction * knockBackDistance, knockBackDuration);
+    }
+
+    protected void KnockFront(float knockFrontDistance, Vector3 position, float knockBackSpeed)
+    {
+        Vector3 direction = (position - transform.position).normalized;
+        transform.DOMove(position + direction * knockFrontDistance, knockBackSpeed);
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
+    }
+
+    public float GetDamageValue()
+    {
+        return damage;
     }
     #endregion
 }

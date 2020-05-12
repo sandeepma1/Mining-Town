@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 8918780072243715170}
   - component: {fileID: 8918780072243715169}
   - component: {fileID: 8918780072243715168}
+  - component: {fileID: 6624642852683357729}
   m_Layer: 0
   m_Name: MonsterMesh
   m_TagString: Untagged
@@ -187,6 +188,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &6624642852683357729
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918780072243715197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8918780072808292950
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiHealthBarPosition: {fileID: 8918780072006810010}
   maxHealth: 15
+  knockBackDistance: 0.5
 --- !u!136 &8918780072808292954
 CapsuleCollider:
   m_ObjectHideFlags: 0

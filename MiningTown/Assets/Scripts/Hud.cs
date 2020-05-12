@@ -8,6 +8,7 @@ public class Hud : MonoBehaviour
 {
     private static Hud Instance = null;
     public static Action<string> SetHudText;
+    [SerializeField] private RectTransform safeFrame;
     [SerializeField] private bool showDebug;
     private static bool ShowDebug { get { return Instance.showDebug; } set { Instance.showDebug = value; } }
     [SerializeField] private bool showFps;
@@ -26,6 +27,8 @@ public class Hud : MonoBehaviour
         {
             StartCoroutine(FPS());
         }
+        Rect safeRect = Screen.safeArea;
+        safeFrame.rect.Set(safeRect.x, safeRect.y, safeRect.width, safeRect.height);
     }
 
     private void OnDestroy()

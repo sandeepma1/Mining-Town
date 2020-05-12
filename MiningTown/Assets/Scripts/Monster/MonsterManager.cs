@@ -1,46 +1,23 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    public static MonsterManager Instance = null;
-    [SerializeField] private MonsterBase smallMonsterPrefab;
-    [SerializeField] private Transform monsterSelectionRing;
-    [SerializeField] private Vector3[] spawnPositios;
     private List<MonsterBase> smallMonsters = new List<MonsterBase>();
 
-    private void Awake()
+    public void AddMonster(MonsterBase monster, int xPos, int yPos)
     {
-        Instance = this;
-    }
-
-    private void Start()
-    {
-        for (int i = 0; i < spawnPositios.Length; i++)
-        {
-            InstantiateMonster(spawnPositios[i]);
-        }
-    }
-
-    //Temp Function
-    private void Update()
-    {
-        if (Input.GetMouseButtonUp(1))
-        {
-            InstantiateMonster(spawnPositios[0]);
-        }
-    }
-
-    private void InstantiateMonster(Vector3 position)
-    {
-        MonsterBase smallMonster = Instantiate(smallMonsterPrefab, position, Quaternion.identity, transform);
-        smallMonsters.Add(smallMonster);
+        monster.transform.localPosition = new Vector3(xPos, 0, yPos);
+        //ClosestObject.AddToRederer?.Invoke(monster.monsterMesh);
+        smallMonsters.Add(monster);
+        monster.OnMonsterDied += MonsterDied;
     }
 
     public void MonsterDied(MonsterBase smallMonster)
     {
-        SetMonsterSelectionRing(null);
+        SelectionCircle.SetToThisParent?.Invoke(null);
+        smallMonster.OnMonsterDied -= MonsterDied;
         smallMonsters.Remove(smallMonster);
     }
 
@@ -58,23 +35,52 @@ public class MonsterManager : MonoBehaviour
                 minDist = dist;
             }
         }
-        SetMonsterSelectionRing(nearestMonster);
         return nearestMonster;
+    }
+
+    public Vector3? GetNearestMonsterPositionFromPosition(Vector3 currentPos)
+    {
+        MonsterBase nearestMonster = null;
+        float minDist = Mathf.Infinity;
+        for (int i = 0; i < smallMonsters.Count; i++)
+        {
+            float dist = Vector3.Distance(smallMonsters[i].transform.position, currentPos);
+            if (dist < minDist)
+            {
+                nearestMonster = smallMonsters[i];
+                minDist = dist;
+            }
+        }
+        if (nearestMonster == null)
+        {
+            return null;
+        }
+        else
+        {
+            return nearestMonster.transform.position;
+        }
     }
 
     private void SetMonsterSelectionRing(MonsterBase nearestMonster)
     {
-        if (nearestMonster == null)
-        {
-            monsterSelectionRing.SetParent(null);
-            monsterSelectionRing.gameObject.SetActive(false);
-        }
-        else
-        {
-            monsterSelectionRing.SetParent(nearestMonster.transform);
-            monsterSelectionRing.gameObject.SetActive(true);
-            monsterSelectionRing.localPosition = Vector3.zero;
-        }
+        //if (nearestMonster == null)
+        //{
+        //    monsterSelectionRing.SetParent(null);
+        //    monsterSelectionRing.gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    monsterSelectionRing.SetParent(nearestMonster.transform);
+        //    monsterSelectionRing.gameObject.SetActive(true);
+        //    monsterSelectionRing.localPosition = Vector3.zero;
+        //}
     }
     #endregion
+}
+
+public enum MonsterType
+{
+    FollowOnDetect,
+    Shooting,
+    Patrol
 }
