@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 4cc9077568fae034cac113b40e85839d
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BeesOrchardBush
+    second: {fileID: 2100000, guid: 30d16beccc9c85a42ae2edd6553a6c88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BeesOrchardBush2
+    second: {fileID: 2100000, guid: 93ba3eab8b0df28409cc3ab8138dc529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BeesOrchardHedge
+    second: {fileID: 2100000, guid: 0f8c64ac338de694e88a8ac9641acc74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlobShadowBig
+    second: {fileID: 2100000, guid: cd897b9f29df3d249b59d932cf91e95d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BuildingShadowEarth
+    second: {fileID: 2100000, guid: 7a501197bde0f5b46b80b167f9105fea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BuildingShadowGras
+    second: {fileID: 2100000, guid: 95ebd5a25723af642a34f92593387e91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BuildingShadowPavement
+    second: {fileID: 2100000, guid: 7c0dad7bcfaf13843808bf833509a0fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BuildingShadowTownDark
+    second: {fileID: 2100000, guid: 5e142a9b4678cc945a5ebdf88c23e533, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BushFarmHouseGreen
+    second: {fileID: 2100000, guid: bccce7cddd5573d468210966abd62b04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default-Material
+    second: {fileID: 2100000, guid: b90a3ac053399664ca1d09fe66af96d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlowerPatchBlue
+    second: {fileID: 2100000, guid: 7c000d38d1a2b53409260b9a1e262b0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlowerPatchPink
+    second: {fileID: 2100000, guid: b519bd2debf99474d8a08f856136fbe2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HaloStreetLights
+    second: {fileID: 2100000, guid: bed3146dd2bc1c444a9721f446631665, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NPCTownGrass1_NPCTownGrass1
+    second: {fileID: 2100000, guid: 2f87dc5ff0895ac4cbec9ce6a14e5dc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pavilion_base01
+    second: {fileID: 2100000, guid: 1807a1e9a75bbc540bf4b0710ee4f5b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stoneplates
+    second: {fileID: 2100000, guid: 31a1741f282a23a43afc20c597814940, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Townsquare_Fountain1
+    second: {fileID: 2100000, guid: cfab3130d00b44a47a05437aa73dfa4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Woodwalls
+    second: {fileID: 2100000, guid: a03f362cdfb1cbc4c880cc6b618f5e5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vfx_water_foam_00
+    second: {fileID: 2100000, guid: 51339d6cd46b2b649b71ed6fac80f4e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vfx_water_foam_03
+    second: {fileID: 2100000, guid: 4af72ca24bbbb704fa9a67661e1fc596, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vfx_water_foam_pigfountain
+    second: {fileID: 2100000, guid: 5070ccd302a3eb148af56bf38f33363a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vfx_water_foam_pigfountain 1
+    second: {fileID: 2100000, guid: 9d722a38e1ccb544b9d84e688bec1890, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 200
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 200
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,28 @@
+fishId,name,rodLevel,minLengthInCm,maxLengthInCm,locationId,strugglePower,minBaitWait,maxBaitWait,slug
+56,Fishbones,1,0,0,1,0,1,5,fishbones
+57,Empty Can,1,0,0,1,0,1,5,emptycan
+58,Blue Catfish,1,80,100,1,90,1,5,bluecatfish
+59,Bream,1,80,100,1,130,1,5,bream
+60,Brown Trout,1,10,25,1,100,1,5,browntrout
+61,Bighead Carp,4,50,100,1,120,1,5,bigheadcarp
+62,Crayfish,1,10,35,1,140,1,5,crayfish
+63,Creek Chub,2,80,100,2,160,1,5,creekchub
+64,Ghostfish,3,10,25,2,90,1,5,ghostfish
+65,Glowfish,1,50,100,2,130,1,5,glowfish
+66,Golden Trout,1,10,35,2,100,1,5,goldentrout
+67,Goldfish,1,80,100,2,120,1,5,goldfish
+68,Grass Carp,4,10,25,2,140,1,5,grasscarp
+69,Greenling,1,50,100,3,160,1,5,greenling
+70,Herring,2,10,35,3,90,1,5,herring
+71,Northern Pike,3,80,100,3,130,1,5,northernpike
+72,Perch,1,10,25,3,100,1,5,perch
+73,Rainbow Trout,1,50,100,3,120,1,5,rainbowtrout
+74,Red Snapper,1,10,35,3,140,1,5,redsnapper
+75,Roach,4,80,100,4,160,1,5,roach
+76,Salmon,1,10,25,4,90,1,5,salmon
+77,Sardine,2,50,100,4,130,1,5,sardine
+78,Shad,3,10,35,4,100,1,5,shad
+79,Silver Carp,1,50,100,4,120,1,5,silvercarp
+80,Sturgeon,1,50,100,4,140,1,5,sturgeon
+81,Sunfish,1,10,35,4,160,1,5,sunfish
+82,Walleye,4,80,100,4,80,1,5,walleye

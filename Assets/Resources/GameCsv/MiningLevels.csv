@@ -1,0 +1,12 @@
+levelId,levelMapName,laderMin,laderMax,totalProb,name1,id1,prob1,name2,id2,prob2,name3,id3,prob3,name4,id4,prob4,name5,id5,prob5,name6,id6,prob6,name7,id7,prob7,totalMonsterProb,name1,id1,prob1,name2,id2,prob2,name3,id3,prob3,name4,id4,prob4,name5,id5,prob5,name6,id6,prob6,name7,id7,prob7
+1,1,0,0.35,0.085,Soft Rock,1,0.04,Rock,2,0.035,Hard Rock,3,0.01,,0,0,,0,0,,0,0,,0,0,0.01,Green Slime,1,0.01,,0,0,,0,0,,0,0,,0,0,,0,0,,0,0
+2,2,0,0.35,0.085,Soft Rock,1,0.04,Rock,2,0.035,Hard Rock,3,0.01,,0,0,,0,0,,0,0,,0,0,0.01,Green Slime,1,0.01,,0,0,,0,0,,0,0,,0,0,,0,0,,0,0
+3,3,0,0.35,0.09,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,,0,0,,0,0,0.02,Green Slime,1,0.01,Bat,4,0.01,,0,0,,0,0,,0,0,,0,0,,0,0
+4,4,0,0.35,0.09,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,,0,0,,0,0,0.02,Green Slime,1,0.01,Bat,4,0.01,,0,0,,0,0,,0,0,,0,0,,0,0
+5,4,0,0.35,0.09,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,,0,0,,0,0,0.02,Green Slime,1,0.01,Bat,4,0.01,,0,0,,0,0,,0,0,,0,0,,0,0
+6,5,0,0.35,0.1075,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,Silver Rock,9,0.01,Gold Rock,10,0.0075,0.03,Green Slime,1,0.01,Bat,4,0.01,Tarantula,5,0.01,,0,0,,0,0,,0,0,,0,0
+7,3,0,0.35,0.1075,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,Silver Rock,9,0.01,Gold Rock,10,0.0075,0.03,Green Slime,1,0.01,Bat,4,0.01,Tarantula,5,0.01,,0,0,,0,0,,0,0,,0,0
+8,4,0,0.35,0.1075,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,Silver Rock,9,0.01,Gold Rock,10,0.0075,0.03,Green Slime,1,0.01,Bat,4,0.01,Tarantula,5,0.01,,0,0,,0,0,,0,0,,0,0
+9,3,0,0.35,0.1075,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,Silver Rock,9,0.01,Gold Rock,10,0.0075,0.03,Green Slime,1,0.01,Bat,4,0.01,Tarantula,5,0.01,,0,0,,0,0,,0,0,,0,0
+10,6,0,0.35,0.1075,Soft Rock,1,0.04,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,Silver Rock,9,0.01,Gold Rock,10,0.0075,0.03,Green Slime,1,0.01,Bat,4,0.01,Tarantula,5,0.01,,0,0,,0,0,,0,0,,0,0
+11,7,0,0.35,0.0975,Soft Rock,1,0.03,Rock,2,0.02,Hard Rock,3,0.01,Big Rock,5,0.01,Dark Rock,4,0.01,Silver Rock,9,0.01,Gold Rock,10,0.0075,0.03,Green Slime,1,0.01,Bat,4,0.01,Tarantula,5,0.01,,0,0,,0,0,,0,0,,0,0

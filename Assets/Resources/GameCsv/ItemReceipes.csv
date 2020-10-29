@@ -1,0 +1,34 @@
+outputName,outputId,sourceName,sourceId,reqName1,reqId1,reqCount1,reqName2,reqId2,reqCount2,reqName3,reqId3,reqCount3,coinCost:HarvertTimes
+Wheat,1,Raised Bed,1,,0,0,,0,0,,0,0,0
+Corn,2,Raised Bed,1,,0,0,,0,0,,0,0,1
+Carrot,3,Raised Bed,1,,0,0,,0,0,,0,0,2
+Strawberry,4,Raised Bed,1,,0,0,,0,0,,0,0,3
+Potato,5,Raised Bed,1,,0,0,,0,0,,0,0,4
+Tomato,6,Raised Bed,1,,0,0,,0,0,,0,0,5
+Pumpkin,7,Raised Bed,1,,0,0,,0,0,,0,0,6
+Beet,8,Raised Bed,1,,0,0,,0,0,,0,0,7
+CoffeeBean,9,Raised Bed,1,,0,0,,0,0,,0,0,8
+Cotton,10,Raised Bed,1,,0,0,,0,0,,0,0,9
+HotPepper,11,Raised Bed,1,,0,0,,0,0,,0,0,10
+Bread,12,Bakery,2,Wheat,1,2,,0,0,,0,0,0
+Corn Bread,13,Bakery,2,Wheat,1,2,Corn,2,2,,0,0,0
+Cookie,14,Bakery,2,Wheat,1,2,CoffeeBean,9,2,Butter,20,3,0
+Apple Pie,15,Bakery,2,Wheat,1,2,Apple,21,2,,0,0,0
+Apple,21,Apple Tree,5,,0,0,,0,0,,0,0,4
+Orange,22,Orange Tree,6,,0,0,,0,0,,0,0,4
+Egg,16,Chicken Coop,3,Wheat,1,4,Corn,2,3,Chicken Feed,27,20,0
+Milk,17,Cow Shed,4,Hay,29,4,Carrot,3,4,Cow Feed,28,40,0
+Apple Juice,24,Juice Maker,7,Apple,21,3,,0,0,,0,0,0
+Strawberry Shake,25,Juice Maker,7,Strawberry,4,3,Milk,17,2,,0,0,0
+Orange Juice,26,Juice Maker,7,Orange,22,3,,0,0,,0,0,0
+Cream,18,Dairy,8,Milk,17,2,,0,0,,0,0,0
+Cheese,19,Dairy,8,Milk,17,3,,0,0,,0,0,0
+Butter,20,Dairy,8,Milk,17,4,,0,0,,0,0,0
+Sugar,30,Sugar Mill,9,Beet,8,2,,0,0,,0,0,0
+Corn Syrup,31,Sugar Mill,9,Beet,8,3,Corn,2,3,,0,0,0
+Caramel,32,Sugar Mill,9,Beet,8,4,,0,0,,0,0,0
+Copper Bar,41,Furnace,10,Copper Ore,40,4,Coal,39,3,,0,0,0
+Iron Bar,43,Furnace,10,Iron Ore,42,6,Coal,39,6,,0,0,0
+Silver Bar,45,Furnace,10,Silver Ore,44,8,Coal,39,5,,0,0,0
+Gold Bar,47,Furnace,10,Gold Ore,46,12,Coal,39,4,,0,0,0
+,,,,,,,,,,,,,
