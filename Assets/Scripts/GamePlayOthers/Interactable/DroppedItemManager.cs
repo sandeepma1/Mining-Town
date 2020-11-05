@@ -36,6 +36,10 @@ public class DroppedItemManager : MonoBehaviour
             default:
                 break;
         }
+        foreach (Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
     }
 
     private void DropResource(Item itemToDrop, Transform worldTransform, int count)

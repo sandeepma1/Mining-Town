@@ -13,11 +13,6 @@ public class AtlasBank : Singleton<AtlasBank>
         missingSprite = GetSpriteByName("Blockx100", AtlasType.UiItems);
     }
 
-    public Sprite GetSprite(int itemId, AtlasType type)
-    {
-        return GetSpriteByName(ItemDatabase.GetItemSlugById(itemId), type);
-    }
-
     public Sprite GetSpriteByItemId(int itemId)
     {
         return GetSpriteByName(ItemDatabase.GetItemSlugById(itemId), AtlasType.UiItems);

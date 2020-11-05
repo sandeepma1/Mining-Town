@@ -543,6 +543,9 @@ public class PlayerInteraction : MonoBehaviour
             default:
                 break;
         }
+        basicPickaxe.ToggleWeaponVisiblity(false);
+        basicAxe.ToggleWeaponVisiblity(false);
+        basicSword.ToggleWeaponVisiblity(false);
     }
 
     private void ToggleColliderTrigger(bool isTrigger)
@@ -605,7 +608,6 @@ public class PlayerInteraction : MonoBehaviour
 
 
     #region All Animation Functions
-
     private void OnResumeGame()
     {
         animator.speed = 1;
