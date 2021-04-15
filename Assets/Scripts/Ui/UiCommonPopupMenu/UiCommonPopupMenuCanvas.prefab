@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3632271469214643101}
   - component: {fileID: 3632271469214643091}
   - component: {fileID: 3632271469214643103}
-  - component: {fileID: 3632271469214643096}
   m_Layer: 5
   m_Name: UiCommonPopupMenuCanvas
   m_TagString: Untagged
@@ -90,23 +89,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21374e3b254bffc45bff92e0761bcf1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainPanel: {fileID: 3632271469799182187}
   descriptionText: {fileID: 6531133361798308096}
   uiSimpleButtonPrefab: {fileID: 889956241256463083, guid: de173f8f6f0a03b43afcb5504077f008,
     type: 3}
   dialogPanel: {fileID: 3632271470736570780}
   buttonsPanel: {fileID: 3632271470374982398}
---- !u!225 &3632271469214643096
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3632271469214643090}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!1 &3632271469799182187
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3632271469799182188
 RectTransform:
   m_ObjectHideFlags: 0

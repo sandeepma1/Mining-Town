@@ -24,11 +24,13 @@ public class MiningLevelGenerator : MonoBehaviour
     private NavMeshSurface navMeshSurface;
     private List<Vector2Int> randomBreakablesSpace = new List<Vector2Int>();
     public MiningLevel miningLevel;
+    private MeshMaker meshMaker;
 
     private void Start()
     {
         OnBakeNavMesh += BakeNavMesh;
         navMeshSurface = GetComponent<NavMeshSurface>();
+        meshMaker = GetComponent<MeshMaker>();
         LoadLevel();
         LoadCsvLevelMapData();
         CreateLevelObjects();
@@ -60,9 +62,10 @@ public class MiningLevelGenerator : MonoBehaviour
     {
         string path = Path.Combine(GameVariables.path_minesLevelsCsv, miningLevel.levelMapName);
         csv = (TextAsset)Resources.Load(path, typeof(TextAsset));
-        levelData = CSVReader.SplitCsvGrid(csv.text);
+        levelData = CSVReader.ReadCsv(csv.text);
         width = levelData.GetLength(0);
         height = levelData.GetLength(1);
+        meshMaker.InitMesh(width, height);
         OnLevelSizeLoaded?.Invoke(width, height);
         FlipLevelVertically();
     }
@@ -89,11 +92,11 @@ public class MiningLevelGenerator : MonoBehaviour
                 InitLevelObjects(x, y);
             }
         }
+        meshMaker.FinilizeMesh();
     }
 
     private void InitLevelObjects(int x, int y)
     {
-
         string blockName = levelData[x, y];
         if (String.IsNullOrEmpty(blockName))
         {
@@ -118,7 +121,6 @@ public class MiningLevelGenerator : MonoBehaviour
             default:
                 break;
         }
-
     }
 
     private void CreateObstacle(int x, int y)
@@ -129,14 +131,17 @@ public class MiningLevelGenerator : MonoBehaviour
         CreateGroundTile(x, y);
     }
 
+    #region Create Grid Mesh by code
     private void CreateGroundTile(int x, int y)
     {
-        int random = UnityEngine.Random.Range(1, 7);
-        int randomRot = UnityEngine.Random.Range(1, 5);
-        GameObject ground = Instantiate(Resources.Load(GameVariables.path_minesGroundTiles + "G" + random.ToString()) as GameObject, groundTilesParent);
-        ground.transform.localPosition = new Vector3(x, 0, y);
-        ground.transform.localEulerAngles = new Vector3(90, 0, randomRot * 90);
+        meshMaker.AddVertex(x, y);
+        //int random = UnityEngine.Random.Range(1, 7);
+        //int randomRot = UnityEngine.Random.Range(1, 5);
+        //GameObject ground = Instantiate(Resources.Load(GameVariables.path_minesGroundTiles + "G" + random.ToString()) as GameObject, groundTilesParent);
+        //ground.transform.localPosition = new Vector3(x, 0, y);
+        //ground.transform.localEulerAngles = new Vector3(90, 0, randomRot * 90);
     }
+    #endregion
 
     /// <summary>
     /// This function created breakables, monsters, etc randomly in the given B1 position

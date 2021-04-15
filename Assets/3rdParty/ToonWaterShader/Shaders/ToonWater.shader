@@ -1,4 +1,4 @@
-﻿Shader "Bronz/Toon/Water Tut"
+﻿Shader "Bronz/ToonWater"
 {
 	Properties
 	{

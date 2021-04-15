@@ -311,7 +311,7 @@ public static class SaveLoadManager
     private static void LoadGame()
     {
         saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(fileFullPath));
-        saveData.playerStats.playerPosition = GameVariables.housePosition;
+        saveData.playerStats.playerPosition = GameVariables.playerHomePosition;
         isSaveDataLoaded = true;
     }
 
@@ -364,20 +364,20 @@ public class SaveData
         barnItems.Add(new ItemIdWithCount(2, 5));
         //barnItems.Add(new ItemIdWithCount(3, 50));
 
-        raisedBedDatas.Add(new RaisedBedData(new Vector3(-15.5f, 0, -9.5f)));//Raised Bed 1
-        raisedBedDatas.Add(new RaisedBedData(new Vector3(-11.5f, 0, -9.5f)));//Raised Bed 2
-        raisedBedDatas.Add(new RaisedBedData(new Vector3(-7.5f, 0, -9.5f)));//Raised Bed 3
+        raisedBedDatas.Add(new RaisedBedData(new Vector3(2f, 0, -2)));//Raised Bed 1
+        raisedBedDatas.Add(new RaisedBedData(new Vector3(6f, 0, -2)));//Raised Bed 2
+        raisedBedDatas.Add(new RaisedBedData(new Vector3(10f, 0, -2f)));//Raised Bed 3
 
-        prodBuildingDatas.Add(new ProdBuildingData(new Vector3(0.5f, 0, -9.5f), 2, 2));//Bakery
-        prodBuildingDatas.Add(new ProdBuildingData(new Vector3(4.5f, 0, -9.5f), 7, 2));//Juice Maker
+        prodBuildingDatas.Add(new ProdBuildingData(new Vector3(16f, 0, -2f), 2, 2));//Bakery
+        //prodBuildingDatas.Add(new ProdBuildingData(new Vector3(4.5f, 0, -9.5f), 7, 2));//Juice Maker
 
-        livestockDatas.Add(new LivestockData(new Vector3(8, 0, -10), 3, 2));//Chicken Coop
+        //livestockDatas.Add(new LivestockData(new Vector3(8, 0, -10), 3, 2));//Chicken Coop
 
-        fruitTreeDatas.Add(new FruitTreeData(new Vector3(-28, 0, -3), 5));//Apple Tree
-        fruitTreeDatas.Add(new FruitTreeData(new Vector3(-25, 0, -3), 5));//Apple Tree
+        fruitTreeDatas.Add(new FruitTreeData(new Vector3(21, 0, -2f), 5));//Apple Tree
+        fruitTreeDatas.Add(new FruitTreeData(new Vector3(24, 0, -2f), 6));//Apple Tree
 
-        fruitTreeDatas.Add(new FruitTreeData(new Vector3(-22, 0, -3), 6));//Orange Tree
-        fruitTreeDatas.Add(new FruitTreeData(new Vector3(-19, 0, -3), 6));//Orange Tree
+        //fruitTreeDatas.Add(new FruitTreeData(new Vector3(-22, 0, -2), 6));//Orange Tree
+        //fruitTreeDatas.Add(new FruitTreeData(new Vector3(-19, 0, -2), 6));//Orange Tree
 
         // decorationDatas.Add(new DecorationData(1, new Vector3(-6.5f, 0, -4)));//Decoration item
     }

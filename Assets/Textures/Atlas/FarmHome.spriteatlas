@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: cc8892a02b29e0c40ae4c31f4e488e19, type: 3}
-    totalSpriteSurfaceArea: 4561587
+    totalSpriteSurfaceArea: 4576435
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -212,6 +212,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 7357022bc1aadfa4c932f3b77cc5de1f, type: 3}
   - {fileID: 21300000, guid: e877d92baa4631e478db6b6d31846102, type: 3}
   - {fileID: 21300000, guid: 3510974be37a3e4498d5b63662a40eda, type: 3}
+  - {fileID: 21300000, guid: 5352bd5b9255aee428439564eec7c2db, type: 3}
   - {fileID: 21300000, guid: ccbd6f8bbf15f29489a23a2d93111644, type: 3}
   - {fileID: 21300000, guid: db30b69b7a3389a49b714d6651300f96, type: 3}
   - {fileID: 21300000, guid: 70669ebbf3e16d648ad785fb412a222b, type: 3}
@@ -458,6 +459,7 @@ SpriteAtlas:
   - BackgroundFlat
   - ArrowLeft
   - wheat4
+  - ui_bg_bubble_01_thought
   - corn1
   - IcnFriendlist #32237
   - Backpack1

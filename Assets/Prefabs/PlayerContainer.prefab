@@ -204,6 +204,252 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1348654089877716858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3402102634880563716}
+  m_Layer: 0
+  m_Name: fishingrod_rope5_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3402102634880563716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348654089877716858}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.35138106, y: 0, z: -1.6653345e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 618833794693085143}
+  m_Father: {fileID: 8989875331100847120}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1845613050201844838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1567645462191724560}
+  m_Layer: 0
+  m_Name: fishingrod_base1_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1567645462191724560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845613050201844838}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.8326258, z: -1.3819897e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6617701419740866514}
+  m_Father: {fileID: 6557759523427892790}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2299837531317400752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5030984703019954419}
+  m_Layer: 0
+  m_Name: fishingrod_rope1_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5030984703019954419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2299837531317400752}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.67586845, z: 0.011661928}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7727868721045438404}
+  m_Father: {fileID: 6617701419740866514}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4111131876986262669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6617701419740866514}
+  m_Layer: 0
+  m_Name: fishingrod_base2_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6617701419740866514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111131876986262669}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.855978, z: 7.1713755e-23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5030984703019954419}
+  m_Father: {fileID: 1567645462191724560}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4196094796905163725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 618833794693085143}
+  m_Layer: 0
+  m_Name: fishingrod_hook_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &618833794693085143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196094796905163725}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.14520726, y: 0, z: 1.6653345e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3402102634880563716}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5785444532693427340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6557759523427892790}
+  - component: {fileID: 1623159758416462287}
+  m_Layer: 0
+  m_Name: FishingRod
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6557759523427892790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785444532693427340}
+  m_LocalRotation: {x: 0.31542337, y: 0.02461862, z: 0.94854325, w: -0.012952072}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.9818609, y: 1.9818614, z: 1.9818606}
+  m_Children:
+  - {fileID: 1567645462191724560}
+  m_Father: {fileID: 3016095426513949110}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -3.1460001, y: 36.773003, z: -179.481}
+--- !u!137 &1623159758416462287
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785444532693427340}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c981e8e370853274a8675ae8a17a1213, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 2097018127674751445, guid: 6f826e00044ceda418f9413074c899f9, type: 3}
+  m_Bones:
+  - {fileID: 6557759523427892790}
+  - {fileID: 1567645462191724560}
+  - {fileID: 6617701419740866514}
+  - {fileID: 5030984703019954419}
+  - {fileID: 7727868721045438404}
+  - {fileID: 215953229707989715}
+  - {fileID: 8989875331100847120}
+  - {fileID: 3402102634880563716}
+  - {fileID: 618833794693085143}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: -0.040648215, y: 1.176553, z: 0.00046978146}
+    m_Extent: {x: 0.117052756, y: 1.2378483, z: 0.07713092}
+  m_DirtyAABB: 0
 --- !u!1 &5899709937414273370
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +617,6 @@ MonoBehaviour:
   monsterLayer:
     serializedVersion: 2
     m_Bits: 1024
-  maxPlayerHealth: 50
 --- !u!1 &5899709938433811747
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +649,37 @@ Transform:
   m_Father: {fileID: 5899709938075045331}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
+--- !u!1 &6767659073078657773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8989875331100847120}
+  m_Layer: 0
+  m_Name: fishingrod_rope4_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8989875331100847120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6767659073078657773}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1563325, y: 8.5265126e-16, z: -1.6653345e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3402102634880563716}
+  m_Father: {fileID: 215953229707989715}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7066408088310966152
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +852,68 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &7662453247961802854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215953229707989715}
+  m_Layer: 0
+  m_Name: fishingrod_rope3_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215953229707989715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662453247961802854}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15425423, y: 8.5265126e-16, z: 1.6653345e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8989875331100847120}
+  m_Father: {fileID: 7727868721045438404}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8147040219368994120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7727868721045438404}
+  m_Layer: 0
+  m_Name: fishingrod_rope2_jnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7727868721045438404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147040219368994120}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.16016948, y: -0.003611004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 215953229707989715}
+  m_Father: {fileID: 5030984703019954419}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &966120971233590364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,12 +1114,6 @@ PrefabInstance:
       objectReference: {fileID: 2886261392549177495}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9342f0b21dc442a47b62c388b3c9638d, type: 3}
---- !u!1 &2886261392549177495 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3748200042359832381, guid: 9342f0b21dc442a47b62c388b3c9638d,
-    type: 3}
-  m_PrefabInstance: {fileID: 2020505884633290666}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8895110099812814459 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7456695326015117777, guid: 9342f0b21dc442a47b62c388b3c9638d,
@@ -794,6 +1126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840e54fb359d9e044b88d819b1cfaa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2886261392549177495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3748200042359832381, guid: 9342f0b21dc442a47b62c388b3c9638d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2020505884633290666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2240530394303176703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1050,9 +1388,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4445578030834610368}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1540540101269171319 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2941066769878080695, guid: 5043cfa79f3163a429c4ce18bc0a5a26,
+--- !u!4 &3016095426513949110 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1471145893035385206, guid: 5043cfa79f3163a429c4ce18bc0a5a26,
     type: 3}
   m_PrefabInstance: {fileID: 4445578030834610368}
   m_PrefabAsset: {fileID: 0}
@@ -1062,9 +1400,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4445578030834610368}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3016095426513949110 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1471145893035385206, guid: 5043cfa79f3163a429c4ce18bc0a5a26,
+--- !u!95 &1540540101269171319 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2941066769878080695, guid: 5043cfa79f3163a429c4ce18bc0a5a26,
     type: 3}
   m_PrefabInstance: {fileID: 4445578030834610368}
   m_PrefabAsset: {fileID: 0}

@@ -375,6 +375,7 @@ public class UiPlayerBackpackCanvas : UiBasicCanvasWindowBase
             AddUpdateItem(new ItemIdWithCount(item.Key, item.Value), false);
         }
         OnRefreshSlotDetails();
+        UiFeedbackPopupCanvas.OnShowFeedbackPopup?.Invoke(GameVariables.msg_sortedBackpack);
     }
 
     private void OnConsumeButtonPressed()
@@ -384,6 +385,10 @@ public class UiPlayerBackpackCanvas : UiBasicCanvasWindowBase
         {
             RemoveReduceItem(1);
             uiSlotItems[currentSelectedSlotId].OnButtonClicked();
+        }
+        else
+        {
+            UiFeedbackPopupCanvas.OnShowFeedbackPopup?.Invoke(GameVariables.msg_energyMax);
         }
     }
 

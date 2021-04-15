@@ -5,7 +5,7 @@ public static class GameVariables
     //public static string pp_currentLevelNumber = "currentLevelNumber";
     //public static string pp_currentPlayerHealth = "currentPlayerHealth";
 
-    public static Vector3 housePosition = new Vector3(-30, 0, 5);
+    public static Vector3 playerHomePosition = new Vector3(8, 0, 3);
     public static string tag_ladder = "Ladder";
     public static string tag_forestExit = "ForestExit";
     public static string tag_water = "Water";
@@ -46,6 +46,8 @@ public static class GameVariables
     public static string msg_lowOnCoins = "You don't have enough coins, buy some coins to proceed";
     public static string msg_lowOnGems = "You don't have enough gems, buy some gems to proceed";
     public static string msg_lowOnEnergy = "You don't have enough energy, buy some energy to proceed";
+    public static string msg_energyMax = "Your energy is full";
+    public static string msg_sortedBackpack = "Backpack is sorted";
     public static string msg_lowOnBackpackSpace = "You backpack is full, buy new slots or empty some items";
     public static string msg_gotoNextMinesLevel = "Decent to next level?";
     public static string msg_gotoNextForestLevel = "Do you want to go deep inside the forest?";

@@ -66,7 +66,7 @@ public class ForestLevelGenerator : MonoBehaviour
     {
         string path = Path.Combine(GameVariables.path_forestLevelsCsv, forestLevel.levelMapName);
         csv = (TextAsset)Resources.Load(path, typeof(TextAsset));
-        levelData = CSVReader.SplitCsvGrid(csv.text);
+        levelData = CSVReader.ReadCsv(csv.text);
         width = levelData.GetLength(0);
         height = levelData.GetLength(1);
 
