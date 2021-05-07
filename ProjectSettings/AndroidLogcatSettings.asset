@@ -1,13 +1,20 @@
 {
     "m_SelectedDeviceId": "16e3121d",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "16e3121d",
+        "name": "com.Bronz.MiningTown",
+        "processId": 9182,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "16e3121d",
+            "name": "com.Bronz.MiningTown",
+            "processId": 9182,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
