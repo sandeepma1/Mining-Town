@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "16e3121d",
         "name": "com.Bronz.MiningTown",
-        "processId": 9182,
+        "processId": 17640,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,6 +12,12 @@
             "deviceId": "16e3121d",
             "name": "com.Bronz.MiningTown",
             "processId": 9182,
+            "exited": false
+        },
+        {
+            "deviceId": "16e3121d",
+            "name": "com.Bronz.MiningTown",
+            "processId": 17640,
             "exited": false
         }
     ],

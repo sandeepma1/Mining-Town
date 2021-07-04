@@ -10,6 +10,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: BeachBridge
+    second: {fileID: 2100000, guid: 1fa9869cade9cab49be12fa29d51ef43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Buildings
     second: {fileID: 2100000, guid: d347cdabe2411b1409aeef2755ade436, type: 2}
   - first:
@@ -22,6 +27,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: DownGrass
     second: {fileID: 2100000, guid: d2d2caf3bd480b14098de661a8a161fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DownShadow
+    second: {fileID: 2100000, guid: 806e1c448a8a4894fa37da404fbd0a54, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

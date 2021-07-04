@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: cc8892a02b29e0c40ae4c31f4e488e19, type: 3}
-    totalSpriteSurfaceArea: 4576819
+    totalSpriteSurfaceArea: 4685294
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -44,6 +44,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8d8f8860c37f32e40b5be821a629a30e, type: 3}
   - {fileID: 21300000, guid: 305b1f60abfcb9449ab6d4974c932bf0, type: 3}
   - {fileID: 21300000, guid: 5ea80f80b0b9658459e426c71ab668b6, type: 3}
+  - {fileID: 21300000, guid: 1995429076bf539479160d245633aaa3, type: 3}
   - {fileID: 21300000, guid: 4d9840d030270124eaf7fa9358543c88, type: 3}
   - {fileID: 21300000, guid: d6697cd0c8a74844c8cdc7f151e7d3c4, type: 3}
   - {fileID: 21300000, guid: 37d495e0eae4ea94593fce460ceabedd, type: 3}
@@ -73,6 +74,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5b70c54260636eb4a87c81b11a49a574, type: 3}
   - {fileID: 21300000, guid: 48c926427efe46741bacbb40b6ab2e39, type: 3}
   - {fileID: 21300000, guid: d04d94a2b4ab97446a279a495184faec, type: 3}
+  - {fileID: 21300000, guid: 71bf07b2d1cf4884a970f9d5d086ceda, type: 3}
   - {fileID: 21300000, guid: cb89b1d2030d831478801c777d43d22c, type: 3}
   - {fileID: 21300000, guid: e004f6d2164328540b7474f6c7b134ea, type: 3}
   - {fileID: 21300000, guid: 6afe79030454a2c468639b6e43d0a16e, type: 3}
@@ -227,10 +229,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2a694c7c43238b3498bfbe6103663ce8, type: 3}
   - {fileID: 21300000, guid: 385ee19c621674b4cb9a8463e57a3a97, type: 3}
   - {fileID: 21300000, guid: 660270aca6c6ad64bb1d68349e01849f, type: 3}
+  - {fileID: 21300000, guid: 212be5ac53bbda243b1adbfe13d671b9, type: 3}
   - {fileID: 21300000, guid: ba2cb7acf1164d7498ae658831a88aca, type: 3}
   - {fileID: 21300000, guid: eaa6a7cce398cdf43aa35eb91af68c14, type: 3}
   - {fileID: 21300000, guid: 1ac263dc00e736246bbdcc335198399c, type: 3}
   - {fileID: 21300000, guid: b8212efc80baa1549bb87b079c9777bc, type: 3}
+  - {fileID: 21300000, guid: 9572910d554dda94f88a8fe10097d750, type: 3}
   - {fileID: 21300000, guid: 897bba0df99bd6841ae26075964e3606, type: 3}
   - {fileID: 21300000, guid: e405de0d1795e68479c46d12dd4c0f6e, type: 3}
   - {fileID: 21300000, guid: cca2f41db462d984f849956e59e2a7a3, type: 3}
@@ -266,6 +270,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ca7e111f9fb02c04b93d5bdd7989a70d, type: 3}
   - {fileID: 21300000, guid: 1f3f4f1fa8d9702478b3139530ecd512, type: 3}
   - {fileID: 21300000, guid: 4b8a7f1f1e1f3c44db7efe2fe67b345f, type: 3}
+  - {fileID: 21300000, guid: 38112c2f070494c4faafa997909ede9e, type: 3}
   - {fileID: 21300000, guid: 113af13fd58664b499185a2b67abd18e, type: 3}
   - {fileID: 21300000, guid: 2351053feabf2b14392c148aedced53e, type: 3}
   - {fileID: 21300000, guid: 66419e6feb744754294ae5d5fd4b442d, type: 3}
@@ -291,6 +296,7 @@ SpriteAtlas:
   - Blank
   - BackerSelected
   - BackgroundFlatShadow
+  - Coins1Top
   - fishbubble
   - corn4
   - progressorange
@@ -320,6 +326,7 @@ SpriteAtlas:
   - PlayerBubble
   - potato4
   - material
+  - XpTop
   - GfxProductionActiveTop
   - strawberry2
   - Grass7
@@ -474,10 +481,12 @@ SpriteAtlas:
   - bream
   - northernpike
   - IcnTrashTop
+  - EnergyTop
   - PanelBgSmall
   - IcnFishExclamation
   - BtnClose
   - orangejuice
+  - CoinTop
   - GridTile
   - inventory
   - wheat
@@ -513,6 +522,7 @@ SpriteAtlas:
   - cowfeed
   - LadderSceamless
   - emptycan
+  - GemTop
   - cornbread
   - BackgroundFlatBorder
   - Grass3

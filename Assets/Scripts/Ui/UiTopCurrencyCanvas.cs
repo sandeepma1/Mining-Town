@@ -12,12 +12,10 @@ public class UiTopCurrencyCanvas : Singleton<UiTopCurrencyCanvas>
     [SerializeField] private Button addEnergyButton;
     [SerializeField] private Button addCoinsButton;
     [SerializeField] private Button addGemsButton;
-    [SerializeField] private TextMeshProUGUI xpText;
-    //[SerializeField] private TextMeshProUGUI xpMinusText;
     [SerializeField] private TextMeshProUGUI energyText;
     [SerializeField] private TextMeshProUGUI energyTimerText;
-    [SerializeField] private RectTransform energyBarBGRect;
-    [SerializeField] private RectTransform energyBarRect;
+    // [SerializeField] private RectTransform energyBarBGRect;
+    // [SerializeField] private RectTransform energyBarRect;
     private float energyBarWidth;
     //[SerializeField] private TextMeshProUGUI energyMinusText;
     [SerializeField] private TextMeshProUGUI coinsText;
@@ -41,7 +39,7 @@ public class UiTopCurrencyCanvas : Singleton<UiTopCurrencyCanvas>
         InitEnergyFill();
         //Get streched rect after end of frame
         yield return new WaitForEndOfFrame();
-        energyBarWidth = energyBarBGRect.rect.width - 5;
+        // energyBarWidth = energyBarBGRect.rect.width - 5;
         UpdateEnergyText();
     }
 
@@ -156,13 +154,13 @@ public class UiTopCurrencyCanvas : Singleton<UiTopCurrencyCanvas>
     }
     public void UpdateXpText()
     {
-        xpText.text = SaveLoadManager.saveData.playerStats.playerXp.ToString();
+        // xpText.text = SaveLoadManager.saveData.playerStats.playerXp.ToString();
     }
     public void UpdateEnergyText()
     {
         float energy = (float)SaveLoadManager.saveData.playerStats.currentEnergy /
                        SaveLoadManager.saveData.playerStats.maxEnergy;
-        energyBarRect.sizeDelta = new Vector2(energyBarWidth * energy, energyBarRect.sizeDelta.y);
+        // energyBarRect.sizeDelta = new Vector2(energyBarWidth * energy, energyBarRect.sizeDelta.y);
         energyText.text = SaveLoadManager.saveData.playerStats.currentEnergy.ToString();
     }
     public void UpdateCoinsText()
