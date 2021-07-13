@@ -27,7 +27,7 @@ public class ItemsDatabase : MonoBehaviour
         string[] lines = new string[100];
         string[] chars = new string[100];
         TextAsset itemCSV = Resources.Load("CSV/" + fileName) as TextAsset;
-        lines = Regex.Split(itemCSV.text, "\r\n");
+        lines = Regex.Split(itemCSV.text, Environment.NewLine);
         for (int i = 1; i < lines.Length - 1; i++)
         {
             chars = Regex.Split(lines[i], ",");
