@@ -58,7 +58,7 @@ public static class ExtensionMethods
     public static List<string> ToCsvLines(this string fileName)
     {
         TextAsset itemCSV = Resources.Load("GameCsv/" + fileName) as TextAsset;
-        List<string> linesList = Regex.Split(itemCSV.text, Environment.NewLine).ToList<string>();
+        List<string> linesList = Regex.Split(itemCSV.text, Environment.NewLine).ToList();
         linesList.RemoveAt(0); // Remove first item as CSV has column names
         linesList.RemoveAt(linesList.Count - 1); // Warning: Remove last item as CSV one blank line at the end
         return linesList;

@@ -62,6 +62,7 @@ public class UiProdBuildingCanvas : UiBasicCanvasWindowBase
         OnHideCanvas += HideCanvas;
         OnUpdateUiItems += UpdateUiItems;
         uiDropItem.OnDropItem += UiDropItemHandler;
+        PlayerInteraction.OnNearestIInteractableBuilding += SelectNearestBuilding;
         progressBarWidth = progressBarRect.transform.parent.GetComponent<RectTransform>().sizeDelta.x;
         gemsCompleteProdButton.onClick.AddListener(OnItemCompleteGemButtonClicked);
         gemsBuyNewBoxButton.onClick.AddListener(OnGemsBuyNewQueueBoxButtonClicked);
@@ -231,6 +232,7 @@ public class UiProdBuildingCanvas : UiBasicCanvasWindowBase
             uiDraggerItem.OnDragStart += OnDragStart;
             uiDraggerItem.OnDragItemPosition += OnDragItemPosition;
             uiDraggerItem.OnDragEnd += OnDragEnd;
+            uiDraggerItem.OnClickItem += OnClickItem;
             uiDragItems.Add(uiDraggerItem);
         }
     }
@@ -264,6 +266,20 @@ public class UiProdBuildingCanvas : UiBasicCanvasWindowBase
             ToggleCanvas(false);
         }
     }
+    
+    protected override void ToggleActionPanel(bool isVisible)
+    {
+        base.ToggleActionPanel(isVisible);
+
+        if (isVisible)
+        {
+            for (int i = 0; i < uiDragItems.Count; i++)
+            {
+                uiDragItems[i].UpdateCountText();
+            }
+        }
+        isCanvasVisible = isVisible;
+    }
 
     protected override void ToggleCanvas(bool isVisible)
     {
@@ -279,11 +295,18 @@ public class UiProdBuildingCanvas : UiBasicCanvasWindowBase
         isCanvasVisible = isVisible;
     }
 
+    private void SelectNearestBuilding(IInteractable interactable, List<IInteractable> interactables)
+    {
+        if (interactable == null)
+        {
+            HideCanvas();
+        }
+    }
 
     #region Gem releated buttons 
     private void OnItemCompleteGemButtonClicked()
     {
-        ToggleCanvas(false);
+        ToggleActionPanel(false);
         bool hasGems = PlayerCurrencyManager.ReduceGems(gemsNeededToCompelete);
         if (hasGems)
         {
@@ -338,6 +361,15 @@ public class UiProdBuildingCanvas : UiBasicCanvasWindowBase
         dropWindow.SetAsFirstSibling();
         cursorImage.enabled = false;
         currentDraggedItemId = -1;
+    }
+
+    private void OnClickItem(int itemId)
+    {
+        if (itemId >= 0)
+        {
+            OnItemDroppedOnProdBuilding?.Invoke(itemId);
+        }
+        UpdateUiItems();
     }
 
     private void UiDropItemHandler()

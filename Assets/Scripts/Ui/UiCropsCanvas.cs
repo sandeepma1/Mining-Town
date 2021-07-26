@@ -59,6 +59,7 @@ public class UiCropsCanvas : UiBasicCanvasWindowBase
             uiDraggerItem.OnDragStart += OnDragStart;
             uiDraggerItem.OnDragItemPosition += OnDragItemPosition;
             uiDraggerItem.OnDragEnd += OnDragEnd;
+            uiDraggerItem.OnClickItem += OnClickItem;
             uiDragItems.Add(uiDraggerItem);
         }
     }
@@ -115,7 +116,6 @@ public class UiCropsCanvas : UiBasicCanvasWindowBase
 
     private void HideCanvas()
     {
-
         if (isCanvasVisible)
         {
             ToggleCanvas(false);
@@ -170,6 +170,15 @@ public class UiCropsCanvas : UiBasicCanvasWindowBase
         if (currentDraggedItemId >= 0)
         {
             OnCropDroppedOnRaisedBed?.Invoke(currentDraggedItemId);
+            HideCanvas();
+        }
+    }
+
+    private void OnClickItem(int itemId)
+    {
+        if (itemId >= 0)
+        {
+            OnCropDroppedOnRaisedBed?.Invoke(itemId);
             HideCanvas();
         }
     }

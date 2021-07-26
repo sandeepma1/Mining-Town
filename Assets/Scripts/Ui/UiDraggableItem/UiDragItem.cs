@@ -7,6 +7,7 @@ using MiningTown.IO;
 
 public class UiDragItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
+    public Action<int> OnClickItem;
     public Action<int, Sprite> OnDragStart;
     public Action<Vector2> OnDragItemPosition;
     public Action OnDragEnd;
@@ -14,6 +15,7 @@ public class UiDragItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     [SerializeField] private TextMeshProUGUI inInventoryCountText;
     private ScrollRect scrollRect;
     private bool isDragging;
+    private bool isScrolling;
     private Vector2 touchPos;
     private int itemId;
     private DescriptionType descriptionType;
@@ -57,6 +59,7 @@ public class UiDragItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         }
         else
         {
+            isScrolling = true;
             ExecuteEvents.Execute(scrollRect.gameObject, eventData, ExecuteEvents.dragHandler);
         }
     }
@@ -95,6 +98,12 @@ public class UiDragItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (!isScrolling)
+        {
+            OnClickItem?.Invoke(itemId);
+        }
+
+        isScrolling = false;
         HideItemDescCanvas();
     }
 

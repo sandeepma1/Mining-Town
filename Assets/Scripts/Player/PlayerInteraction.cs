@@ -62,7 +62,7 @@ public class PlayerInteraction : MonoBehaviour
         PlayerCurrencyManager.OnPlayerDied += PlayDeadAnimation;
         PlayerCurrencyManager.OnPlayerHitted += PlayHittedAnimation;
         UiCropsCanvas.OnScanNearbyBeds += OnScanNearbyBeds;
-        Joystick.OnKnobButtonClicked += OnKnobButtonClicked;
+        //Joystick.OnKnobButtonClicked += OnKnobButtonClicked;
         OnToggleColliderTrigger += ToggleColliderTrigger;
         capsuleCollider = GetComponent<CapsuleCollider>();
         yield return new WaitForEndOfFrame();
@@ -74,7 +74,7 @@ public class PlayerInteraction : MonoBehaviour
         PlayerCurrencyManager.OnPlayerDied -= PlayDeadAnimation;
         PlayerCurrencyManager.OnPlayerHitted -= PlayHittedAnimation;
         UiCropsCanvas.OnScanNearbyBeds -= OnScanNearbyBeds;
-        Joystick.OnKnobButtonClicked -= OnKnobButtonClicked;
+        //Joystick.OnKnobButtonClicked -= OnKnobButtonClicked;
         OnToggleColliderTrigger -= ToggleColliderTrigger;
         GameEvents.OnPauseGame -= OnPauseGame;
         GameEvents.OnResumeGame -= OnResumeGame;
@@ -114,12 +114,13 @@ public class PlayerInteraction : MonoBehaviour
 
     private void UpdateFarmMode()
     {
-        if (playerMovement.isPlayerMoving || closestInteractableTransform == null)
+        /*if (playerMovement.isPlayerMoving || closestInteractableTransform == null)*/
         {
             FindClosestInteractable();
             if (closestInteractableTransform != null)
             {
                 OnNearestIInteractableBuilding?.Invoke(nearestIneractable, new List<IInteractable>());
+                nearestIneractable.InteractOnClick();
             }
             else
             {

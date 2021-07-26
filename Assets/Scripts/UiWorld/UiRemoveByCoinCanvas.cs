@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using MiningTown.IO;
 using TMPro;
 using UnityEngine;
@@ -68,6 +69,13 @@ public class UiRemoveByCoinCanvas : MonoBehaviour
 
     protected void ToggleCanvas(bool isVisible)
     {
+        StartCoroutine(ToggleCanvasDelay(isVisible));
+    }
+
+    private IEnumerator ToggleCanvasDelay(bool isVisible)
+    {
+        yield return new WaitForEndOfFrame();
+
         isCanvasVisible = isVisible;
         mainPanel.SetActive(isVisible);
     }
