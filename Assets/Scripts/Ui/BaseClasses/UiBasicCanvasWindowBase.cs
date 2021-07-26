@@ -8,39 +8,38 @@ public class UiBasicCanvasWindowBase : MonoBehaviour
     [SerializeField] private Button closeButton = null;
     [SerializeField] private Button closeButtonBackground = null;
     [SerializeField] protected Button actionButton = null;
-    [SerializeField] protected GameObject actionPanel = null;
     [SerializeField] protected GameObject mainPanel = null;
     protected bool isPopup = false;
 
     protected virtual void Awake()
     {
-        closeButton?.onClick.AddListener(CloseActionPanel);
-        closeButtonBackground?.onClick.AddListener(CloseActionPanel);
-        actionButton?.onClick.AddListener(OpenActionPanel);
-        CloseActionPanel();
+        closeButton?.onClick.AddListener(CloseMainPanel);
+        closeButtonBackground?.onClick.AddListener(CloseMainPanel);
+        actionButton?.onClick.AddListener(OpenMainPanel);
+        CloseMainPanel();
         ToggleCanvas(false);
     }
 
     private void OnDestroy()
     {
-        closeButton?.onClick.RemoveListener(CloseActionPanel);
-        closeButtonBackground?.onClick.RemoveListener(CloseActionPanel);
-        actionButton?.onClick.RemoveListener(OpenActionPanel);
+        closeButton?.onClick.RemoveListener(CloseMainPanel);
+        closeButtonBackground?.onClick.RemoveListener(CloseMainPanel);
+        actionButton?.onClick.RemoveListener(OpenMainPanel);
     }
 
-    protected virtual void ToggleActionPanel(bool isVisible)
+    protected virtual void ToggleMainPanel(bool isVisible)
     {
         if(isVisible)
         {
-            OpenActionPanel();
+            OpenMainPanel();
         }
         else
         {
-            CloseActionPanel();
+            CloseMainPanel();
         }
     }
 
-    protected void OpenActionPanel()
+    protected void OpenMainPanel()
     {
         SuperBlurManager.OnToggleSuperBlur?.Invoke(true);
         if (!isPopup)
@@ -50,11 +49,10 @@ public class UiBasicCanvasWindowBase : MonoBehaviour
 
         closeButtonBackground?.gameObject.SetActive(true);
         actionButton?.gameObject.SetActive(false);
-        if (actionPanel)
-            actionPanel.SetActive(true);
+        mainPanel.SetActive(true);
     }
 
-    protected void CloseActionPanel()
+    protected void CloseMainPanel()
     {
         SuperBlurManager.OnToggleSuperBlur?.Invoke(false);
         if (!isPopup)
@@ -62,17 +60,9 @@ public class UiBasicCanvasWindowBase : MonoBehaviour
             UiAllScreenButtonsCanvas.OnToggleAllButtons?.Invoke(true);
         }
 
-        actionButton?.gameObject.SetActive(true);
         closeButtonBackground?.gameObject.SetActive(false);
-        if (actionPanel)
-            actionPanel.SetActive(false);
-        else
-            ClosePanel();
-    }
-
-    protected void ClosePanel()
-    {
-        ToggleCanvas(false);
+        actionButton?.gameObject.SetActive(true);
+        mainPanel.SetActive(false);
     }
 
     protected virtual void ToggleCanvas(bool isVisible)
@@ -83,7 +73,6 @@ public class UiBasicCanvasWindowBase : MonoBehaviour
     private IEnumerator ToggleCanvasDelay(bool isVisible)
     {
         yield return new WaitForEndOfFrame();
-        mainPanel.gameObject.SetActive(isVisible);
 
         if (actionButton != null)
         {
@@ -91,8 +80,7 @@ public class UiBasicCanvasWindowBase : MonoBehaviour
         }
         else
         {
-            if (actionPanel)
-                actionPanel.SetActive(isVisible);
+            mainPanel.gameObject.SetActive(isVisible);
         }
     }
 }

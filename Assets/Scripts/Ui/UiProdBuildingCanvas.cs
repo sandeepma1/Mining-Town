@@ -267,9 +267,9 @@ public class UiProdBuildingCanvas : UiBasicCanvasWindowBase
         }
     }
     
-    protected override void ToggleActionPanel(bool isVisible)
+    protected override void ToggleMainPanel(bool isVisible)
     {
-        base.ToggleActionPanel(isVisible);
+        base.ToggleMainPanel(isVisible);
 
         if (isVisible)
         {
@@ -306,7 +306,7 @@ public class UiProdBuildingCanvas : UiBasicCanvasWindowBase
     #region Gem releated buttons 
     private void OnItemCompleteGemButtonClicked()
     {
-        ToggleActionPanel(false);
+        ToggleMainPanel(false);
         bool hasGems = PlayerCurrencyManager.ReduceGems(gemsNeededToCompelete);
         if (hasGems)
         {
