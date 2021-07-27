@@ -28,11 +28,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 0
       enableTightPacking: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6cb763e9d3b598b4f980e976bcecbbb0, type: 3}
     totalSpriteSurfaceArea: 1498286
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 6c2ba520ee235d24fb16b575ace5d0b9, type: 3}
@@ -68,5 +71,6 @@ SpriteAtlas:
   - furnace
   - sugarmill
   - dairy
+  m_RenderDataMap: {}
   m_Tag: BuildAtlas
   m_IsVariant: 0
