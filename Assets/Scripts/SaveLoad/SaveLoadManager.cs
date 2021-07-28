@@ -266,6 +266,9 @@ public static class SaveLoadManager
     //Trigger 1
     public static void SaveFarmBarnItems(List<ItemIdWithCount> farmItems)
     {
+        if (saveData == null)
+            return;
+
         saveData.barnItems = new List<ItemIdWithCount>();
         saveData.barnItems = farmItems;
 
@@ -281,6 +284,9 @@ public static class SaveLoadManager
 
     public static void SavePlayerBackpackItems(List<ItemIdWithCount> backpackItems)
     {
+        if (saveData == null)
+            return;
+
         saveData.backpackData.items = new List<ItemIdWithCount>();
         saveData.backpackData.items = backpackItems;
         currentSaveEntries++;
@@ -330,6 +336,11 @@ public static class SaveLoadManager
             File.Delete(fileFullPath);
         }
         Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
     }
     #endregion
 }

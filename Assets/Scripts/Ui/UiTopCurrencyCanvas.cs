@@ -57,6 +57,8 @@ public class UiTopCurrencyCanvas : Singleton<UiTopCurrencyCanvas>
 
     private void Update()
     {
+        return;
+
         if (IsEnergyMax())
         {
             return;
@@ -83,6 +85,8 @@ public class UiTopCurrencyCanvas : Singleton<UiTopCurrencyCanvas>
 
     private void InitEnergyFill()
     {
+        return;
+
         if (IsEnergyMax())
         {
             return;
