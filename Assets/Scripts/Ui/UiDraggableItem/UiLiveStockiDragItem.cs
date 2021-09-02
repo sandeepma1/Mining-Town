@@ -6,6 +6,7 @@ using System;
 
 public class UiLiveStockiDragItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
+    public Action<int> OnClickItem;
     public Action<int, Sprite> OnDragStart;
     public Action<Vector2> OnDragItemPosition;
     public Action OnDragEnd;
@@ -83,6 +84,7 @@ public class UiLiveStockiDragItem : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        OnClickItem?.Invoke(itemId);
         HideItemDescCanvas();
     }
 

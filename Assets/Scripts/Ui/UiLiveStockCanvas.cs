@@ -41,11 +41,14 @@ public class UiLiveStockCanvas : UiBasicCanvasWindowBase
         }
         OnShowCanvas += ShowCanvas;
         OnHideCanvas += HideCanvas;
+        PlayerInteraction.OnNearestIInteractableBuilding += SelectNearestBuilding;
+
         for (int i = 0; i < UiLiveStockiDragItems.Length; i++)
         {
             UiLiveStockiDragItems[i].OnDragStart += OnDragStart;
             UiLiveStockiDragItems[i].OnDragItemPosition += OnDragItemPosition;
             UiLiveStockiDragItems[i].OnDragEnd += OnDragEnd;
+            UiLiveStockiDragItems[i].OnClickItem += OnClickItem;
         }
         for (int i = 0; i < uiLivestocks.Length; i++)
         {
@@ -259,6 +262,13 @@ public class UiLiveStockCanvas : UiBasicCanvasWindowBase
         isCanvasVisible = isVisible;
     }
 
+    private void SelectNearestBuilding(IInteractable interactable, List<IInteractable> interactables)
+    {
+        if (interactable == null)
+        {
+            HideCanvas();
+        }
+    }
 
     #region Gem releated buttons     
     private void OnGemButtonClick(int gemCountToComplete, int index)
@@ -291,7 +301,6 @@ public class UiLiveStockCanvas : UiBasicCanvasWindowBase
     }
     #endregion
 
-
     #region Drag Drop Stuff
     private void OnDragStart(int requiredIndex, Sprite sprite)
     {
@@ -310,5 +319,11 @@ public class UiLiveStockCanvas : UiBasicCanvasWindowBase
         cursorImage.enabled = false;
         currentDraggedRequiredIndex = -1;
     }
+
+    private void OnClickItem(int itemId)
+    {
+
+    }
+
     #endregion
 }
