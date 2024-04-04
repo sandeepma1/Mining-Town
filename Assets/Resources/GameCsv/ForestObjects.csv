@@ -1,0 +1,8 @@
+id,name,outputItemName,outputItemId,minDrop,maxDrop,hitPoints,xpOnDrop,slug
+1,Small Pine Tree,Pine Log,35,1,1,2,4,smallpinetree
+2,Medium Pine Tree,Pine Log,35,1,2,3,4,mediumpinetree
+3,Large Pine Tree,Pine Log,35,2,3,4,4,largepinetree
+4,Big Rock,Stone,33,1,2,8,4,bigrock
+5,Clay Rock,Clay,38,0,1,10,4,clayrock
+6,Wooden Box,Pine Log,35,1,2,5,4,woodenbox
+7,Wooden Barrrel,Pine Log,35,1,3,10,4,woodenbarrrel

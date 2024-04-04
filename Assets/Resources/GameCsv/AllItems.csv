@@ -1,0 +1,83 @@
+id,name,category,description,energyRestore,healthRestore,buyValueInGems,sellValueInCoins,xpOnSell,yieldDurationInMins,xpOnHarvest,removeByCoins,slug,categoryId
+1,Wheat,Crops,Wheat is a grass widely cultivated for its seed,0,0,2,20,2,1,2,0,wheat,1
+2,Corn,Crops,Corn is a variety of maize with a high sugar content,5,2,3,21,2,2,3,0,corn,1
+3,Carrot,Crops,The carrot is a root vegetable usually orange in colour,5,2,3,21,2,3,4,0,carrot,1
+4,Strawberry,Crops,The strawberry is not a berry from a botanical point of view,5,2,4,29,3,4,5,0,strawberry,1
+5,Potato,Crops,Like all crops they are stored in the barn,5,2,4,30,4,5,5,0,potato,1
+6,Tomato,Crops,Like all crops they are stored in the barn,5,2,4,31,4,6,6,0,tomato,1
+7,Pumpkin,Crops,Like all crops they are stored in the barn,0,0,4,28,6,7,6,0,pumpkin,1
+8,Beet,Crops,Like all crops they are stored in the barn,5,2,4,28,6,8,7,0,beet,1
+9,CoffeeBean,Crops,Like all crops they are stored in the barn,0,0,4,28,6,9,7,0,coffeebean,1
+10,Cotton,Crops,Like all crops they are stored in the barn,0,0,4,28,7,2,2,0,cotton,1
+11,HotPepper,Crops,Like all crops they are stored in the barn,0,0,4,28,7,3,3,0,hotpepper,1
+12,Bread,Products,It is one of the oldest man-made foods,10,5,4,28,7,1,4,0,bread,2
+13,Corn Bread,Products,A quick bread containing cornmeal,10,5,4,28,7,2,5,0,cornbread,2
+14,Cookie,Products,For best results bake cookies on middle oven rack,12,5,4,28,7,3,5,0,cookie,2
+15,Apple Pie,Products,Often served with whipped cream or ice cream,12,5,4,28,7,4,10,0,applepie,2
+16,Egg,Suppliers,Descriptions,6,5,4,28,7,1,5,0,egg,3
+17,Milk,Suppliers,Descriptions,8,5,4,28,7,1,6,0,milk,3
+18,Cream,Products,Descriptions,10,5,4,28,7,1,7,0,cream,2
+19,Cheese,Products,Descriptions,10,5,4,28,7,2,7,0,cheese,2
+20,Butter,Products,Descriptions,8,5,4,28,7,3,8,0,butter,2
+21,Apple,Suppliers,Descriptions,6,5,4,28,7,12,9,20,apple,3
+22,Orange,Suppliers,Descriptions,6,5,4,28,7,14,9,20,orange,3
+23,Cocoa,Suppliers,Cocoa makes chocolate,0,0,4,28,7,14,2,0,cocoa,3
+24,Apple Juice,Products,Made by the maceration and pressing of apples,8,5,4,28,7,1,9,20,applejuice,2
+25,Strawberry Shake,Products,Made by the Strawberry and Milk,6,5,4,28,7,1,9,20,strawberryshake,2
+26,Orange Juice,Products,Orange juice is a liquid extract of the orange fruits,8,5,4,28,7,1,10,0,orangejuice,2
+27,Chicken Feed,Products,Chicken Feed,0,0,4,28,7,1,10,0,chickenfeed,2
+28,Cow Feed,Products,Cow Feed,0,0,4,28,7,1,10,0,cowfeed,2
+29,Hay,Products,Hay,0,0,4,28,7,1,10,0,hay,2
+30,Sugar,Products,Sweet item,6,5,4,28,7,1,10,0,sugar,2
+31,Corn Syrup,Products,Sweet item,6,5,4,28,7,1,10,0,cornsyrup,2
+32,Caramel,Products,Sweet item,3,5,4,28,7,1,10,0,caramel,2
+33,Stone,Mining,Mining minerals ,0,0,5,100,8,1,12,0,stone,5
+34,Birch Log,Suppliers,Basic supplies,0,0,5,100,8,1,12,0,birchlog,3
+35,Pine Log,Suppliers,Basic supplies,0,0,5,100,8,1,12,0,pinelog,3
+36,Hard Wood,Suppliers,Basic supplies,0,0,5,100,8,1,12,0,hardwood,3
+37,Soft Wood,Suppliers,Basic supplies,0,0,5,100,8,1,12,0,softwood,3
+38,Clay,Suppliers,Basic supplies,0,0,5,100,8,1,12,0,clay,3
+39,Coal,Mining,Mining minerals ,0,0,5,100,8,1,12,0,coal,5
+40,Copper Ore,Mining,Mining minerals ,0,0,5,100,8,1,12,0,copperore,5
+41,Copper Bar,Mining,Mining minerals ,0,0,5,100,8,10,12,0,copperbar,5
+42,Iron Ore,Mining,Mining minerals ,0,0,5,100,8,1,12,0,ironore,5
+43,Iron Bar,Mining,Mining minerals ,0,0,5,100,8,15,12,0,ironbar,5
+44,Silver Ore,Mining,Mining minerals ,0,0,5,100,8,1,12,0,silverore,5
+45,Silver Bar,Mining,Mining minerals ,0,0,5,100,8,20,12,0,silverbar,5
+46,Gold Ore,Mining,Mining minerals ,0,0,5,100,8,1,12,0,goldore,5
+47,Gold Bar,Mining,Mining minerals ,0,0,5,100,8,25,12,0,goldbar,5
+48,Gem,Mining,Mining minerals ,0,0,1,100,0,1,0,0,gem,5
+49,Diamond,Mining,Mining minerals ,0,0,25,150,8,1,12,0,diamond,5
+50,Quartz,Mining,Mining minerals ,0,0,25,150,8,1,12,0,quartz,5
+51,Emerald,Mining,Mining minerals ,0,0,25,150,8,1,12,0,emerald,5
+52,Sapphire,Mining,Mining minerals ,0,0,25,150,8,1,12,0,sapphire,5
+53,Ruby,Mining,Mining minerals ,0,0,25,150,8,1,12,0,ruby,5
+54,Amethyst,Mining,Mining minerals ,0,0,25,150,8,1,12,0,amethyst,5
+55,Crystal,Mining,Mining minerals ,0,0,25,150,9,1,12,0,crystal,5
+56,Fishbones,Suppliers,Trash material,0,0,1,1,0,1,0,0,fishbones,3
+57,Empty Can,Suppliers,Trash material,0,0,1,1,0,1,0,0,emptycan,3
+58,Blue Catfish,Fish,Fish material,6,2,10,70,10,1,12,0,bluecatfish,4
+59,Bream,Fish,Fish material,6,2,10,70,10,1,12,0,bream,4
+60,Brown Trout,Fish,Fish material,6,2,10,70,10,1,12,0,browntrout,4
+61,Bighead Carp,Fish,Fish material,6,2,10,70,10,1,12,0,bigheadcarp,4
+62,Crayfish,Fish,Fish material,6,2,10,70,10,1,12,0,crayfish,4
+63,Creek Chub,Fish,Fish material,6,2,10,70,10,1,12,0,creekchub,4
+64,Ghostfish,Fish,Fish material,6,2,10,70,10,1,12,0,ghostfish,4
+65,Glowfish,Fish,Fish material,6,2,10,70,10,1,12,0,glowfish,4
+66,Golden Trout,Fish,Fish material,6,2,10,70,10,1,12,0,goldentrout,4
+67,Goldfish,Fish,Fish material,6,2,10,70,10,1,12,0,goldfish,4
+68,Grass Carp,Fish,Fish material,6,2,10,70,10,1,12,0,grasscarp,4
+69,Greenling,Fish,Fish material,6,2,10,70,10,1,12,0,greenling,4
+70,Herring,Fish,Fish material,6,2,10,70,10,1,12,0,herring,4
+71,Northern Pike,Fish,Fish material,6,2,10,70,10,1,12,0,northernpike,4
+72,Perch,Fish,Fish material,6,2,10,70,10,1,12,0,perch,4
+73,Rainbow Trout,Fish,Fish material,6,2,10,70,10,1,12,0,rainbowtrout,4
+74,Red Snapper,Fish,Fish material,6,2,10,70,10,1,12,0,redsnapper,4
+75,Roach,Fish,Fish material,6,2,10,70,10,1,12,0,roach,4
+76,Salmon,Fish,Fish material,6,2,10,70,10,1,12,0,salmon,4
+77,Sardine,Fish,Fish material,6,2,10,70,10,1,12,0,sardine,4
+78,Shad,Fish,Fish material,6,2,10,70,10,1,12,0,shad,4
+79,Silver Carp,Fish,Fish material,6,2,10,70,10,1,12,0,silvercarp,4
+80,Sturgeon,Fish,Fish material,6,2,10,70,10,1,12,0,sturgeon,4
+81,Sunfish,Fish,Fish material,6,2,10,70,10,1,12,0,sunfish,4
+82,Walleye,Fish,Fish material,6,2,10,70,10,1,12,0,walleye,4

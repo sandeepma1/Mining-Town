@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BuildAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 6cb763e9d3b598b4f980e976bcecbbb0, type: 3}
+    totalSpriteSurfaceArea: 1498286
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6c2ba520ee235d24fb16b575ace5d0b9, type: 3}
+  - {fileID: 21300000, guid: 46e7e090bb6744d40bf0cb6053c0f3f3, type: 3}
+  - {fileID: 21300000, guid: 5ef26351bea9a5b4f820d3fe4067c9cb, type: 3}
+  - {fileID: 21300000, guid: ccfbec61c2217974d85871c2a005ad3d, type: 3}
+  - {fileID: 21300000, guid: 6ba40871bfcfe384fa0c1ce1477a56fb, type: 3}
+  - {fileID: 21300000, guid: 8233ce71a2f74164bade8db788d79d8b, type: 3}
+  - {fileID: 21300000, guid: 6b2deaa1804608047a9d8256973ff45d, type: 3}
+  - {fileID: 21300000, guid: 5b588f920a552a34a87297e9010ee467, type: 3}
+  - {fileID: 21300000, guid: 78247a9563bb7bb4d81e61e7afd79e2d, type: 3}
+  - {fileID: 21300000, guid: fa707a763b0b11b468d8fc5a4da24d23, type: 3}
+  - {fileID: 21300000, guid: 1545cfd66641d1d45bd496e38f98cbcf, type: 3}
+  - {fileID: 21300000, guid: 83c5ae571bafb5a439bdea635dafff4f, type: 3}
+  - {fileID: 21300000, guid: 58db29084952a29448029034802b35ac, type: 3}
+  - {fileID: 21300000, guid: 7a8eedd883526d741a02fab8431ca902, type: 3}
+  - {fileID: 21300000, guid: 0c7ce819011a98743b95f00825640129, type: 3}
+  - {fileID: 21300000, guid: d5a0e86b8a90d48478b394851955b41c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - floortilebrown
+  - cowshed
+  - raisedbed
+  - Knob
+  - greenbench
+  - juicemaker
+  - orangetree
+  - appletree
+  - EdgeGlow
+  - Glow
+  - chickencoop
+  - JoystickMain
+  - bakery
+  - furnace
+  - sugarmill
+  - dairy
+  m_RenderDataMap: {}
+  m_Tag: BuildAtlas
+  m_IsVariant: 0

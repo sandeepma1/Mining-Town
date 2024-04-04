@@ -1,0 +1,6 @@
+levelId,levelMapName,totalProb,name1,id1,prob1,name2,id2,prob2,name3,id3,prob3,name4,id4,prob4,name5,id5,prob5,name6,id6,prob6,name7,id7,prob7,totalMonsterProb,name1,id1,prob1,name2,id2,prob2,name3,id3,prob3,name4,id4,prob4,name5,id5,prob5,name6,id6,prob6,name7,id7,prob7
+1,1,0.18,Small Pine Tree,1,0.1,Medium Pine Tree,2,0.05,Large Pine Tree,3,0.03,,0,0,,0,0,,0,0,,0,0,0.2,Green Slime,1,0.1,Tarantula,5,0.1,,0,0,,0,0,,0,0,,0,0,,0,0
+2,2,0.18,Small Pine Tree,1,0.1,Medium Pine Tree,2,0.05,Large Pine Tree,3,0.03,,0,0,,0,0,,0,0,,0,0,0.2,Green Slime,1,0.1,Tarantula,5,0.1,,0,0,,0,0,,0,0,,0,0,,0,0
+3,3,0.18,Small Pine Tree,1,0.1,Medium Pine Tree,2,0.05,Large Pine Tree,3,0.03,,0,0,,0,0,,0,0,,0,0,0.2,Green Slime,1,0.1,Tarantula,5,0.1,,0,0,,0,0,,0,0,,0,0,,0,0
+4,4,0.18,Small Pine Tree,1,0.1,Medium Pine Tree,2,0.05,Large Pine Tree,3,0.03,,0,0,,0,0,,0,0,,0,0,0.2,Green Slime,1,0.1,Tarantula,5,0.1,,0,0,,0,0,,0,0,,0,0,,0,0
+5,4,0.18,Small Pine Tree,1,0.1,Medium Pine Tree,2,0.05,Large Pine Tree,3,0.03,,0,0,,0,0,,0,0,,0,0,0.2,Green Slime,1,0.1,Tarantula,5,0.1,,0,0,,0,0,,0,0,,0,0,,0,0

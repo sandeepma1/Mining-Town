@@ -1,0 +1,6 @@
+id,Source,outputItemId,min,max,hitPoints,XP,slug
+0,Rock,-1,0,1,-1,-1,rock
+1,Rock1,-1,0,1,-1,-1,rock1
+1,Copper Rock,-1,,,-1,-1,copperrock
+2,Iron Rock,-1,,,-1,-1,ironrock
+3,Gem Rock,,,,,,gemrock

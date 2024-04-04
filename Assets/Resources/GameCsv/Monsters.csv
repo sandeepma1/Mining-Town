@@ -1,0 +1,6 @@
+id,name,outputOnKill,outputItemId,minDrop,maxDrop,type,idleState,wanderRepeatRate,wanderRadius,damage,knockBackDistance,viewRadius,attackRadius,alertSpeed,baseSpeed,health,xpOnKill,slug
+1,Green Slime,Stone,33,0,1,FollowAndKill,Wander,1.5,3,5,0.5,5,3,1,2.5,20,10,greenslime
+2,Small Slime,Stone,33,0,1,FollowAndKill,Wander,1.5,3,5,0.5,5,3,1,2.5,10,10,smallslime
+3,Purple Slime,Stone,33,0,1,FollowAndKill,Wander,1.5,3,5,0.5,5,3,1,2.5,35,10,purpleslime
+4,Bat,Stone,33,0,1,FollowAndKill,Wander,1,3,5,0.5,5,3,1,2.5,35,10,bat
+5,Tarantula,Stone,33,0,1,FollowAndKill,Wander,0.75,5,6,0.5,6,3,1.5,3,50,10,tarantula

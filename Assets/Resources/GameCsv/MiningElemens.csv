@@ -1,0 +1,20 @@
+id,Source,outputItemId,minDrop,maxDrop,hitPoints,xpOnDrop,slug
+1,Soft Rock,0,0,1,2,0,softrock
+2,Rock,0,0,1,3,0,rock
+3,Hard Rock,0,1,1,5,0,hardrock
+4,Dark Rock,0,1,2,10,1,darkrock
+5,Copper Rock,0,1,3,10,1,copperrock
+6,Iron Rock,0,1,2,25,2,ironrock
+7,Silver Rock,0,1,2,20,3,silverrock
+8,Coal Rock,0,1,2,20,10,coalrock
+9,Gold Rock,0,1,2,30,3,goldrock
+10,Gem Rock,0,1,1,65,0,gemrock
+11,Wooden Box,0,1,2,5,1,woodenbox
+12,Wooden Barrrel,0,1,3,10,1,woodenbarrrel
+13,Emerald Rock,0,1,1,35,2,emeraldrock
+14,Quartz Rock,0,1,1,20,2,quartzrock
+15,Emerald Rock,0,1,1,20,3,emeraldrock
+16,Sapphire Rock,0,1,1,20,4,sapphirerock
+17,Ruby Rock,0,1,1,20,4,rubyrock
+18,Amethyst Rock,0,1,1,20,3,amethystrock
+19,Crystal Rock,0,1,2,7,0,crystalrock

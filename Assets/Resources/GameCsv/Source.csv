@@ -1,0 +1,11 @@
+id,name,category,categoryId,description,buildCostCoins,deployTime,slug
+1,Raised Bed,Farm,1,grow crops,5,0,raisedbed
+2,Bakery,Mines,0,Production buildings,200,10,bakery
+3,Chicken Coop,Farm,1,Animals,800,0,chickencoop
+4,Cow Shed,Farm,1,Production buildings,1200,0,cowshed
+5,Apple Tree,Orchard,2,Produces apples,200,0,appletree
+6,Orange Tree,Orchard,2,Produces oranges,200,0,orangetree
+7,Juice Maker,Mines,0,Makes various juice,2000,30,juicemaker
+8,Dairy,Mines,0,Makes various juice,2000,30,dairy
+9,Sugar Mill,Mines,0,Makes various juice,2000,30,sugarmill
+10,Furnace,Mines,0,Makes various juice,2000,30,furnace
